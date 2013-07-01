@@ -169,3 +169,6 @@ C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
