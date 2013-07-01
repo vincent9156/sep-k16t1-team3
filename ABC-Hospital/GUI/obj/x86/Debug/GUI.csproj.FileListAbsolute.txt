@@ -1,0 +1,168 @@
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\GUI.exe
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\GUI.pdb
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\BL.dll
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\DA.dll
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\DO.dll
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\System.Windows.Forms.Ribbon35.DLL
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\BL.pdb
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\DA.pdb
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\bin\Debug\DO.pdb
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDanhsachcacphong.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon2.resources
+C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien2.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.dll
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.dll
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.dll
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.pdb
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDanhsachcacphong.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+C:\Users\Shady\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+E:\nam3\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+E:\nam3\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+E:\nam3\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.dll
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.dll
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.dll
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.pdb
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDanhsachcacphong.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.pdb
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.dll
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.dll
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.dll
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\BL.pdb
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DA.pdb
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\DO.pdb
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDanhsachcacphong.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDanhsachcacphong.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache

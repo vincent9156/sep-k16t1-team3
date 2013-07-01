@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{871F04B9-A212-409E-B820-1C3C59BB192A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.2.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=11.2.0.3, Culture=neutral, PublicKeyToken=f90dc37c26666a67" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\System.Windows.Forms.Ribbon35.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmChonnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChonnhanvien.Designer.cs">
+      <DependentUpon>frmChonnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhsachban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhsachban.Designer.cs">
+      <DependentUpon>frmDanhsachban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemphidichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemphidichvu.Designer.cs">
+      <DependentUpon>frmThemphidichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBackground.Designer.cs">
+      <DependentUpon>ucBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBaocaoBenhnhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBaocaoBenhnhan.Designer.cs">
+      <DependentUpon>ucBaocaoBenhnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBaocaoNhanviennhaplieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBaocaoNhanviennhaplieu.Designer.cs">
+      <DependentUpon>ucBaocaoNhanviennhaplieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBaocaoNhanvienthutien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBaocaoNhanvienthutien.Designer.cs">
+      <DependentUpon>ucBaocaoNhanvienthutien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDanhsachcacphong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDanhsachcacphong.Designer.cs">
+      <DependentUpon>ucDanhsachcacphong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDichvu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDichvu.Designer.cs">
+      <DependentUpon>ucDichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLaphoadon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLaphoadon.Designer.cs">
+      <DependentUpon>ucLaphoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLoaiphongban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLoaiphongban.Designer.cs">
+      <DependentUpon>ucLoaiphongban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNguoidung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNguoidung.Designer.cs">
+      <DependentUpon>ucNguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNhomdichvu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNhomdichvu.Designer.cs">
+      <DependentUpon>ucNhomdichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNhomnguoidung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNhomnguoidung.Designer.cs">
+      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhanquyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhanquyen.Designer.cs">
+      <DependentUpon>ucPhanquyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucThongkeDoanhthu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThongkeDoanhthu.Designer.cs">
+      <DependentUpon>ucThongkeDoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucXacnhanthutien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucXacnhanthutien.Designer.cs">
+      <DependentUpon>ucXacnhanthutien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmChonnhanvien.resx">
+      <DependentUpon>frmChonnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhsachban.resx">
+      <DependentUpon>frmDanhsachban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemphidichvu.resx">
+      <DependentUpon>frmThemphidichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBackground.resx">
+      <DependentUpon>ucBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBaocaoBenhnhan.resx">
+      <DependentUpon>ucBaocaoBenhnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBaocaoNhanviennhaplieu.resx">
+      <DependentUpon>ucBaocaoNhanviennhaplieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBaocaoNhanvienthutien.resx">
+      <DependentUpon>ucBaocaoNhanvienthutien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDanhsachcacphong.resx">
+      <DependentUpon>ucDanhsachcacphong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDichvu.resx">
+      <DependentUpon>ucDichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLaphoadon.resx">
+      <DependentUpon>ucLaphoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLoaiphongban.resx">
+      <DependentUpon>ucLoaiphongban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNguoidung.resx">
+      <DependentUpon>ucNguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhomdichvu.resx">
+      <DependentUpon>ucNhomdichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhomnguoidung.resx">
+      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhanquyen.resx">
+      <DependentUpon>ucPhanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThongkeDoanhthu.resx">
+      <DependentUpon>ucThongkeDoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucXacnhanthutien.resx">
+      <DependentUpon>ucXacnhanthutien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{956C03DA-34D1-49D1-9127-B04FEF01EFC6}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DA\DA.csproj">
+      <Project>{4397D7BA-F7BE-47CB-9921-5819B6BC054E}</Project>
+      <Name>DA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DO\DO.csproj">
+      <Project>{30A330D7-F003-4C4E-9DFC-F469F88749D8}</Project>
+      <Name>DO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maps-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Files-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Network-Service-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app-map-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\department%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hospital-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keys-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Service-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\childrens-hospital-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOSPITAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sexy Nurse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hospital Computer Keyboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wait-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-sent-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-sign-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign-Download-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Location-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie-chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkpam217675_hospitalbackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\url.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-xeyes-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
