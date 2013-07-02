@@ -148,5 +148,49 @@ namespace DA
             }
             return dsNhom;
         }
+        /// <summary>
+        /// Lấy danh sách tên nhóm người dùng
+        /// </summary>
+        /// <param name="manhom"></param>
+        /// <returns></returns>
+        public static List<NhomNguoiDung_DO> LayNhomNguoiDungTheoTen()
+        {
+            List<NhomNguoiDung_DO> dsNhom = new List<NhomNguoiDung_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NhomNguoiDungs
+                            select u;
+
+                foreach (var row in query)
+                {
+                    NhomNguoiDung_DO us = new NhomNguoiDung_DO();
+                    us._TenNhom = row.TenNhom;
+                    dsNhom.Add(us);
+                }
+            }
+            return dsNhom;
+        }
+        /// <summary>
+        /// Tìm mã nhóm người dùng theo tên nhóm người dùng
+        /// </summary>
+        /// <param name="manhom"></param>
+        /// <returns></returns>
+        public static String TimMaNhomNguoiDung(string tennhom)
+        {
+            string MaTimDuoc;
+            using (Entities sh = new Entities())
+            {
+                var query = from u in sh.NhomNguoiDungs
+                            where u.TenNhom == tennhom
+                            select u;
+                NhomNguoiDung_DO us = new NhomNguoiDung_DO();
+                foreach (var row in query)
+                {
+                    us._MaNhom = row.MaNhom;
+                }
+                MaTimDuoc = us._MaNhom.ToString();
+            }
+            return MaTimDuoc;
+        }
     }
 }
