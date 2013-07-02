@@ -14,7 +14,7 @@ namespace GUI
         public ucLoaiphongban()
         {
             InitializeComponent();
-            lblDatetime.Text = BL.Hamdungchung.Updatetime();
+            lblDatetime.Text = BL.HamDungChung_BL.Updatetime();
         }
 
        

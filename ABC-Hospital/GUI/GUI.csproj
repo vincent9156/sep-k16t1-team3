@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChiTietPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietPhongBan.Designer.cs">
+      <DependentUpon>frmChiTietPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChonnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,12 +120,6 @@
     <Compile Include="ucBaocaoNhanvienthutien.Designer.cs">
       <DependentUpon>ucBaocaoNhanvienthutien.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucDanhsachcacphong.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucDanhsachcacphong.Designer.cs">
-      <DependentUpon>ucDanhsachcacphong.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucDichvu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +162,12 @@
     <Compile Include="ucPhanquyen.Designer.cs">
       <DependentUpon>ucPhanquyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucPhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhongBan.Designer.cs">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucThongkeDoanhthu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     <Compile Include="ucXacnhanthutien.Designer.cs">
       <DependentUpon>ucXacnhanthutien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChiTietPhongBan.resx">
+      <DependentUpon>frmChiTietPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChonnhanvien.resx">
       <DependentUpon>frmChonnhanvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,9 +224,6 @@
     <EmbeddedResource Include="ucBaocaoNhanvienthutien.resx">
       <DependentUpon>ucBaocaoNhanvienthutien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucDanhsachcacphong.resx">
-      <DependentUpon>ucDanhsachcacphong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ucDichvu.resx">
       <DependentUpon>ucDichvu.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucPhanquyen.resx">
       <DependentUpon>ucPhanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhongBan.resx">
+      <DependentUpon>ucPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucThongkeDoanhthu.resx">
       <DependentUpon>ucThongkeDoanhthu.cs</DependentUpon>

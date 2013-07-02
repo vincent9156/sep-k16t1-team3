@@ -12,3 +12,11 @@ C:\Users\K\Desktop\Coding\ABC-Hospital\DA\bin\Debug\DO.pdb
 C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\DA.dll
 C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\DA.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DA.dll.config
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DA.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DA.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DO.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DO.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\DA.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\DA.pdb

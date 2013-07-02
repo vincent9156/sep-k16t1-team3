@@ -115,7 +115,7 @@ namespace GUI
         private void rbbPhongban_Click(object sender, EventArgs e)
         {
             pnlMain.Controls.Clear();
-            ucDanhsachcacphong temp = new ucDanhsachcacphong();
+            ucPhongBan temp = new ucPhongBan();
             pnlMain.Controls.Add(temp);
             temp.Dock = System.Windows.Forms.DockStyle.Fill;
         }

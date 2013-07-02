@@ -7,3 +7,8 @@ C:\Users\K\Desktop\Coding\ABC-Hospital\DO\bin\Debug\DO.pdb
 C:\Users\K\Desktop\Coding\ABC-Hospital\DO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\K\Desktop\Coding\ABC-Hospital\DO\obj\Debug\DO.dll
 C:\Users\K\Desktop\Coding\ABC-Hospital\DO\obj\Debug\DO.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\DO\bin\Debug\DO.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\DO\bin\Debug\DO.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\DO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\K\Desktop\SEP\ABC-Hospital\DO\obj\Debug\DO.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\DO\obj\Debug\DO.pdb
