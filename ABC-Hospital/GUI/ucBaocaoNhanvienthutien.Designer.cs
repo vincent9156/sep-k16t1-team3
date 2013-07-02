@@ -34,7 +34,6 @@
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn7 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
@@ -49,6 +48,8 @@
             this.lblNhomnguoidung = new DevComponents.DotNetBar.LabelX();
             this.pnlNhomnguoidung = new DevComponents.DotNetBar.PanelEx();
             this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
             this.pnlNhomnguoidung.SuspendLayout();
@@ -71,6 +72,8 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.labelX5);
+            this.panelEx2.Controls.Add(this.labelX4);
             this.panelEx2.Controls.Add(this.buttonX1);
             this.panelEx2.Controls.Add(this.btnThietlap);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -213,19 +216,16 @@
             gridColumn1.Name = "";
             gridColumn1.Width = 40;
             gridColumn2.Name = "Mã hóa đơn";
-            gridColumn3.Name = "Nhóm dịch vụ";
-            gridColumn4.Name = "Tổng tiền";
-            gridColumn5.Name = "Nhân viên nhập liệu";
-            gridColumn5.Width = 130;
-            gridColumn6.Name = "Ngày lập";
-            gridColumn7.Name = "Trạng thái";
+            gridColumn3.Name = "Dịch vụ";
+            gridColumn4.Name = "Số tiền";
+            gridColumn5.Name = "Ngày lập";
+            gridColumn6.Name = "Trạng thái";
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn1);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn2);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn3);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn4);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn5);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn6);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn7);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Vertical;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
             this.superGridControl1.Size = new System.Drawing.Size(838, 394);
@@ -313,6 +313,33 @@
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 0;
             // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.ForeColor = System.Drawing.Color.Red;
+            this.labelX5.Location = new System.Drawing.Point(372, 12);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(116, 23);
+            this.labelX5.TabIndex = 4;
+            this.labelX5.Text = "$,000,000";
+            // 
+            // labelX4
+            // 
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.Location = new System.Drawing.Point(270, 12);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(75, 23);
+            this.labelX4.TabIndex = 3;
+            this.labelX4.Text = "Tổng cộng";
+            // 
             // ucBaocaoNhanvienthutien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,6 +373,8 @@
         private DevComponents.DotNetBar.LabelX lblNhomnguoidung;
         private DevComponents.DotNetBar.PanelEx pnlNhomnguoidung;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX labelX4;
 
 
     }
