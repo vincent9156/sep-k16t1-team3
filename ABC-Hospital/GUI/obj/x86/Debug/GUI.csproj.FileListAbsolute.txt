@@ -140,3 +140,38 @@ C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\DO.pdb
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhongBan.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\GUI.exe
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\GUI.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\BL.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\DA.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\DO.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\BL.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\DA.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\bin\Debug\DO.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChiTietPhongBan.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmChonnhanvien.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmDanhsachban.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.frmThemphidichvu.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.Login.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.Main.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.Resource.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBackground.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoBenhnhan.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanviennhaplieu.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucBaocaoNhanvienthutien.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucDichvu.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLaphoadon.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucLoaiphongban.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNguoidung.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomdichvu.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucPhongBan.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
