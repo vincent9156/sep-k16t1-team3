@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bans" EntityType="Model.Ban" />
+    <EntitySet Name="BenhNhans" EntityType="Model.BenhNhan" />
+    <EntitySet Name="ChiTietHoaDons" EntityType="Model.ChiTietHoaDon" />
+    <EntitySet Name="ChiTietPhongBans" EntityType="Model.ChiTietPhongBan" />
+    <EntitySet Name="ChucNangs" EntityType="Model.ChucNang" />
+    <EntitySet Name="ChucNangNguoiDungs" EntityType="Model.ChucNangNguoiDung" />
+    <EntitySet Name="DichVus" EntityType="Model.DichVu" />
+    <EntitySet Name="HoaDons" EntityType="Model.HoaDon" />
+    <EntitySet Name="LoaiPhongBans" EntityType="Model.LoaiPhongBan" />
+    <EntitySet Name="NguoiDungs" EntityType="Model.NguoiDung" />
+    <EntitySet Name="NhomDichVus" EntityType="Model.NhomDichVu" />
+    <EntitySet Name="NhomNguoiDungs" EntityType="Model.NhomNguoiDung" />
+    <EntitySet Name="PhongBans" EntityType="Model.PhongBan" />
+    <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagram" />
+    <AssociationSet Name="FK_ChiTietPhongBan_Ban" Association="Model.FK_ChiTietPhongBan_Ban">
+      <End Role="Ban" EntitySet="Bans" />
+      <End Role="ChiTietPhongBan" EntitySet="ChiTietPhongBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_BenhNhan" Association="Model.FK_HoaDon_BenhNhan">
+      <End Role="BenhNhan" EntitySet="BenhNhans" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietHoaDon_DichVu" Association="Model.FK_ChiTietHoaDon_DichVu">
+      <End Role="DichVu" EntitySet="DichVus" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietHoaDon_HoaDon" Association="Model.FK_ChiTietHoaDon_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietPhongBan_PhongBan" Association="Model.FK_ChiTietPhongBan_PhongBan">
+      <End Role="PhongBan" EntitySet="PhongBans" />
+      <End Role="ChiTietPhongBan" EntitySet="ChiTietPhongBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanQuyen_ChucNang" Association="Model.FK_PhanQuyen_ChucNang">
+      <End Role="ChucNang" EntitySet="ChucNangs" />
+      <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhanQuyen_NhomNguoiDung1" Association="Model.FK_PhanQuyen_NhomNguoiDung1">
+      <End Role="NhomNguoiDung" EntitySet="NhomNguoiDungs" />
+      <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DichVu_NhomDichVu" Association="Model.FK_DichVu_NhomDichVu">
+      <End Role="NhomDichVu" EntitySet="NhomDichVus" />
+      <End Role="DichVu" EntitySet="DichVus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_NguoiDung" Association="Model.FK_HoaDon_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_NguoiDung1" Association="Model.FK_HoaDon_NguoiDung1">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_PhongBan" Association="Model.FK_HoaDon_PhongBan">
+      <End Role="PhongBan" EntitySet="PhongBans" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhongBan_LoaiPhongBan" Association="Model.FK_PhongBan_LoaiPhongBan">
+      <End Role="LoaiPhongBan" EntitySet="LoaiPhongBans" />
+      <End Role="PhongBan" EntitySet="PhongBans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NguoiDung_NhomNguoiDung" Association="Model.FK_NguoiDung_NhomNguoiDung">
+      <End Role="NhomNguoiDung" EntitySet="NhomNguoiDungs" />
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhongBan_NhomDichVu" Association="Model.FK_PhongBan_NhomDichVu">
+      <End Role="NhomDichVu" EntitySet="NhomDichVus" />
+      <End Role="PhongBan" EntitySet="PhongBans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Ban">
+    <Key>
+      <PropertyRef Name="MaBan" />
+    </Key>
+    <Property Name="MaBan" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="MaPhongBan" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MoTa" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="ChiTietPhongBans" Relationship="Model.FK_ChiTietPhongBan_Ban" FromRole="Ban" ToRole="ChiTietPhongBan" />
+  </EntityType>
+  <EntityType Name="BenhNhan">
+    <Key>
+      <PropertyRef Name="MaBenhNhan" />
+    </Key>
+    <Property Name="MaBenhNhan" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="TenBenhNhan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GioiTinh" Type="String" MaxLength="7" Unicode="true" FixedLength="false" />
+    <Property Name="Tuoi" Type="Int32" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HoaDons" Relationship="Model.FK_HoaDon_BenhNhan" FromRole="BenhNhan" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="ChiTietHoaDon">
+    <Key>
+      <PropertyRef Name="MaCTHD" />
+    </Key>
+    <Property Name="MaCTHD" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+    <Property Name="MaHoaDon" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="MaDichVu" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TenBenhNhan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="DichVu" Relationship="Model.FK_ChiTietHoaDon_DichVu" FromRole="ChiTietHoaDon" ToRole="DichVu" />
+    <NavigationProperty Name="HoaDon" Relationship="Model.FK_ChiTietHoaDon_HoaDon" FromRole="ChiTietHoaDon" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="ChiTietPhongBan">
+    <Key>
+      <PropertyRef Name="MaCTPB" />
+    </Key>
+    <Property Name="MaCTPB" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="MaPhongBan" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MaBan" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Ban" Relationship="Model.FK_ChiTietPhongBan_Ban" FromRole="ChiTietPhongBan" ToRole="Ban" />
+    <NavigationProperty Name="PhongBan" Relationship="Model.FK_ChiTietPhongBan_PhongBan" FromRole="ChiTietPhongBan" ToRole="PhongBan" />
+  </EntityType>
+  <EntityType Name="ChucNang">
+    <Key>
+      <PropertyRef Name="MaChucNang" />
+    </Key>
+    <Property Name="MaChucNang" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="TenChucNang" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ChucNangNguoiDungs" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNang" ToRole="ChucNangNguoiDung" />
+  </EntityType>
+  <EntityType Name="ChucNangNguoiDung">
+    <Key>
+      <PropertyRef Name="MaChucNang" />
+      <PropertyRef Name="MaNhom" />
+    </Key>
+    <Property Name="MaChucNang" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="MaNhom" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="ChucNang" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNangNguoiDung" ToRole="ChucNang" />
+    <NavigationProperty Name="NhomNguoiDung" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="ChucNangNguoiDung" ToRole="NhomNguoiDung" />
+  </EntityType>
+  <EntityType Name="DichVu">
+    <Key>
+      <PropertyRef Name="MaDichVu" />
+    </Key>
+    <Property Name="MaDichVu" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="MaNhomDichVu" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TenDichVu" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="DonGia" Type="Int32" />
+    <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="Model.FK_ChiTietHoaDon_DichVu" FromRole="DichVu" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="NhomDichVu" Relationship="Model.FK_DichVu_NhomDichVu" FromRole="DichVu" ToRole="NhomDichVu" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="MaHoaDon" />
+    </Key>
+    <Property Name="MaHoaDon" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="MaBenhNhan" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="MaPhongBan" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MaDVNL" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MaNguoiNhap" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="MaNguoiThu" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="GioiTinh" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="Tuoi" Type="Int32" />
+    <Property Name="TongTien" Type="Int32" />
+    <Property Name="NgayThang" Type="DateTime" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="BenhNhan" Relationship="Model.FK_HoaDon_BenhNhan" FromRole="HoaDon" ToRole="BenhNhan" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="Model.FK_ChiTietHoaDon_HoaDon" FromRole="HoaDon" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="NguoiDung" Relationship="Model.FK_HoaDon_NguoiDung" FromRole="HoaDon" ToRole="NguoiDung" />
+    <NavigationProperty Name="NguoiDung1" Relationship="Model.FK_HoaDon_NguoiDung1" FromRole="HoaDon" ToRole="NguoiDung" />
+    <NavigationProperty Name="PhongBan" Relationship="Model.FK_HoaDon_PhongBan" FromRole="HoaDon" ToRole="PhongBan" />
+  </EntityType>
+  <EntityType Name="LoaiPhongBan">
+    <Key>
+      <PropertyRef Name="MaLoaiPhongBan" />
+    </Key>
+    <Property Name="MaLoaiPhongBan" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TenLoaiPhongBan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="PhongBans" Relationship="Model.FK_PhongBan_LoaiPhongBan" FromRole="LoaiPhongBan" ToRole="PhongBan" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="MaNguoiDung" />
+    </Key>
+    <Property Name="MaNguoiDung" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
+    <Property Name="MaNhom" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TenNguoiDung" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="HoaDons" Relationship="Model.FK_HoaDon_NguoiDung" FromRole="NguoiDung" ToRole="HoaDon" />
+    <NavigationProperty Name="HoaDons1" Relationship="Model.FK_HoaDon_NguoiDung1" FromRole="NguoiDung" ToRole="HoaDon" />
+    <NavigationProperty Name="NhomNguoiDung" Relationship="Model.FK_NguoiDung_NhomNguoiDung" FromRole="NguoiDung" ToRole="NhomNguoiDung" />
+  </EntityType>
+  <EntityType Name="NhomDichVu">
+    <Key>
+      <PropertyRef Name="MaNhomDichVu" />
+    </Key>
+    <Property Name="MaNhomDichVu" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TenNhomDichVu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="DichVus" Relationship="Model.FK_DichVu_NhomDichVu" FromRole="NhomDichVu" ToRole="DichVu" />
+    <NavigationProperty Name="PhongBans" Relationship="Model.FK_PhongBan_NhomDichVu" FromRole="NhomDichVu" ToRole="PhongBan" />
+  </EntityType>
+  <EntityType Name="NhomNguoiDung">
+    <Key>
+      <PropertyRef Name="MaNhom" />
+    </Key>
+    <Property Name="MaNhom" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="TenNhom" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="ChucNangNguoiDungs" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="NhomNguoiDung" ToRole="ChucNangNguoiDung" />
+    <NavigationProperty Name="NguoiDungs" Relationship="Model.FK_NguoiDung_NhomNguoiDung" FromRole="NhomNguoiDung" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="PhongBan">
+    <Key>
+      <PropertyRef Name="MaPhongBan" />
+    </Key>
+    <Property Name="MaPhongBan" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="MaLoaiPhongBan" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="MaNhomDichVu" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="TenPhongBan" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <NavigationProperty Name="ChiTietPhongBans" Relationship="Model.FK_ChiTietPhongBan_PhongBan" FromRole="PhongBan" ToRole="ChiTietPhongBan" />
+    <NavigationProperty Name="HoaDons" Relationship="Model.FK_HoaDon_PhongBan" FromRole="PhongBan" ToRole="HoaDon" />
+    <NavigationProperty Name="LoaiPhongBan" Relationship="Model.FK_PhongBan_LoaiPhongBan" FromRole="PhongBan" ToRole="LoaiPhongBan" />
+    <NavigationProperty Name="NhomDichVu" Relationship="Model.FK_PhongBan_NhomDichVu" FromRole="PhongBan" ToRole="NhomDichVu" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_ChiTietPhongBan_Ban">
+    <End Role="Ban" Type="Model.Ban" Multiplicity="1" />
+    <End Role="ChiTietPhongBan" Type="Model.ChiTietPhongBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ban">
+        <PropertyRef Name="MaBan" />
+      </Principal>
+      <Dependent Role="ChiTietPhongBan">
+        <PropertyRef Name="MaBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_BenhNhan">
+    <End Role="BenhNhan" Type="Model.BenhNhan" Multiplicity="1" />
+    <End Role="HoaDon" Type="Model.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BenhNhan">
+        <PropertyRef Name="MaBenhNhan" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaBenhNhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietHoaDon_DichVu">
+    <End Role="DichVu" Type="Model.DichVu" Multiplicity="1" />
+    <End Role="ChiTietHoaDon" Type="Model.ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DichVu">
+        <PropertyRef Name="MaDichVu" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaDichVu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietHoaDon_HoaDon">
+    <End Role="HoaDon" Type="Model.HoaDon" Multiplicity="1" />
+    <End Role="ChiTietHoaDon" Type="Model.ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="MaHoaDon" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaHoaDon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietPhongBan_PhongBan">
+    <End Role="PhongBan" Type="Model.PhongBan" Multiplicity="1" />
+    <End Role="ChiTietPhongBan" Type="Model.ChiTietPhongBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhongBan">
+        <PropertyRef Name="MaPhongBan" />
+      </Principal>
+      <Dependent Role="ChiTietPhongBan">
+        <PropertyRef Name="MaPhongBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhanQuyen_ChucNang">
+    <End Role="ChucNang" Type="Model.ChucNang" Multiplicity="1" />
+    <End Role="ChucNangNguoiDung" Type="Model.ChucNangNguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChucNang">
+        <PropertyRef Name="MaChucNang" />
+      </Principal>
+      <Dependent Role="ChucNangNguoiDung">
+        <PropertyRef Name="MaChucNang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhanQuyen_NhomNguoiDung1">
+    <End Role="NhomNguoiDung" Type="Model.NhomNguoiDung" Multiplicity="1" />
+    <End Role="ChucNangNguoiDung" Type="Model.ChucNangNguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomNguoiDung">
+        <PropertyRef Name="MaNhom" />
+      </Principal>
+      <Dependent Role="ChucNangNguoiDung">
+        <PropertyRef Name="MaNhom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DichVu_NhomDichVu">
+    <End Role="NhomDichVu" Type="Model.NhomDichVu" Multiplicity="0..1" />
+    <End Role="DichVu" Type="Model.DichVu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomDichVu">
+        <PropertyRef Name="MaNhomDichVu" />
+      </Principal>
+      <Dependent Role="DichVu">
+        <PropertyRef Name="MaNhomDichVu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_NguoiDung">
+    <End Role="NguoiDung" Type="Model.NguoiDung" Multiplicity="1" />
+    <End Role="HoaDon" Type="Model.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="MaNguoiDung" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNguoiNhap" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_NguoiDung1">
+    <End Role="NguoiDung" Type="Model.NguoiDung" Multiplicity="1" />
+    <End Role="HoaDon" Type="Model.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="MaNguoiDung" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaNguoiThu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_PhongBan">
+    <End Role="PhongBan" Type="Model.PhongBan" Multiplicity="1" />
+    <End Role="HoaDon" Type="Model.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhongBan">
+        <PropertyRef Name="MaPhongBan" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaPhongBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhongBan_LoaiPhongBan">
+    <End Role="LoaiPhongBan" Type="Model.LoaiPhongBan" Multiplicity="1" />
+    <End Role="PhongBan" Type="Model.PhongBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiPhongBan">
+        <PropertyRef Name="MaLoaiPhongBan" />
+      </Principal>
+      <Dependent Role="PhongBan">
+        <PropertyRef Name="MaLoaiPhongBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NguoiDung_NhomNguoiDung">
+    <End Role="NhomNguoiDung" Type="Model.NhomNguoiDung" Multiplicity="1" />
+    <End Role="NguoiDung" Type="Model.NguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomNguoiDung">
+        <PropertyRef Name="MaNhom" />
+      </Principal>
+      <Dependent Role="NguoiDung">
+        <PropertyRef Name="MaNhom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhongBan_NhomDichVu">
+    <End Role="NhomDichVu" Type="Model.NhomDichVu" Multiplicity="1" />
+    <End Role="PhongBan" Type="Model.PhongBan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhomDichVu">
+        <PropertyRef Name="MaNhomDichVu" />
+      </Principal>
+      <Dependent Role="PhongBan">
+        <PropertyRef Name="MaNhomDichVu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -9,17 +9,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucDanhsachcacphong : UserControl
+    public partial class ucPhongBan : UserControl
     {
-        public ucDanhsachcacphong()
+        public ucPhongBan()
         {
             InitializeComponent();
-            lblDatetime.Text = BL.Hamdungchung.Updatetime();
         }
 
         private void labelX5_Click(object sender, EventArgs e)
         {
-            frmDanhsachban temp = new frmDanhsachban();
+            frmChiTietPhongBan temp = new frmChiTietPhongBan();
             temp.ShowDialog();
         }
     }
