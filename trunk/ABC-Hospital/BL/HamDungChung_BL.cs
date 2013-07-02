@@ -7,7 +7,7 @@ using DO;
 using System.Globalization;
 namespace BL
 {
-    public class Hamdungchung
+    public class HamDungChung_BL
     {
         // Hàm lấy thứ ngày tháng năm 
         public static string Updatetime()
