@@ -5,24 +5,10 @@ C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\DA\bin\Debug\DO.pd
 C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
 C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\DA\obj\Debug\DA.dll
 C:\Users\K\documents\visual studio 2010\Projects\ABC-Hospital\DA\obj\Debug\DA.pdb
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.dll
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.pdb
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.dll
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.pdb
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.dll
-D:\Data\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.pdb
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.dll
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.pdb
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.dll
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.pdb
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.dll
-C:\Users\vodan_000\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.pdb
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.dll
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DA.pdb
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.dll
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\bin\Debug\DO.pdb
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.dll
-C:\Users\Duong\Dropbox\SEP\K16T1_Team3_SEP_Hospital_Deliverables\3 - Source Code\Giao diện-v2.0\ABC-Hospital\DA\obj\Debug\DA.pdb
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\bin\Debug\DA.dll
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\bin\Debug\DA.pdb
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\bin\Debug\DO.dll
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\bin\Debug\DO.pdb
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\DA.dll
+C:\Users\K\Desktop\Coding\ABC-Hospital\DA\obj\Debug\DA.pdb

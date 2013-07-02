@@ -20,6 +20,8 @@ namespace BL
             string result ="";
             string date = DateTime.Now.ToShortDateString();
 
+
+
             DateTime day = DateTime.Now;
             string dayS = day.DayOfWeek.ToString();
             int dayI = ((int)day.DayOfWeek);

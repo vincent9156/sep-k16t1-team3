@@ -33,8 +33,11 @@
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn3 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnThietlap = new DevComponents.DotNetBar.ButtonX();
             this.dateTimeInput1 = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.lblphanquyen = new DevComponents.DotNetBar.LabelX();
             this.pnlNhomnguoidung = new DevComponents.DotNetBar.PanelEx();
@@ -44,8 +47,6 @@
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.comboBoxEx2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.btnThietlap = new DevComponents.DotNetBar.ButtonX();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput1)).BeginInit();
             this.pnlNhomnguoidung.SuspendLayout();
@@ -59,16 +60,19 @@
             this.superGridControl1.ForeColor = System.Drawing.Color.Black;
             this.superGridControl1.Location = new System.Drawing.Point(0, 98);
             this.superGridControl1.Name = "superGridControl1";
-            gridColumn1.Name = "Mã bệnh nhân";
-            gridColumn2.Name = "Tên bệnh nhân";
-            gridColumn3.Name = "Đơn vị thu";
-            gridColumn4.Name = "Nhóm dịch vụ";
-            gridColumn5.Name = "Tổng tiền";
+            gridColumn1.HeaderText = "STT";
+            gridColumn1.Name = "";
+            gridColumn2.Name = "Mã bệnh nhân";
+            gridColumn3.Name = "Tên bệnh nhân";
+            gridColumn4.Name = "Đơn vị thu";
+            gridColumn5.Name = "Nhóm dịch vụ";
+            gridColumn6.Name = "Tổng tiền";
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn1);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn2);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn3);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn4);
             this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn5);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn6);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Vertical;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
             this.superGridControl1.Size = new System.Drawing.Size(838, 363);
@@ -93,6 +97,32 @@
             this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 10;
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::GUI.Resource.App_xeyes_icon;
+            this.buttonX1.Location = new System.Drawing.Point(585, 6);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(116, 37);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 2;
+            this.buttonX1.Text = "Xem trước";
+            // 
+            // btnThietlap
+            // 
+            this.btnThietlap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThietlap.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThietlap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThietlap.Image = global::GUI.Resource.Printer_icon;
+            this.btnThietlap.Location = new System.Drawing.Point(707, 6);
+            this.btnThietlap.Name = "btnThietlap";
+            this.btnThietlap.Size = new System.Drawing.Size(116, 37);
+            this.btnThietlap.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThietlap.TabIndex = 1;
+            this.btnThietlap.Text = "In";
             // 
             // dateTimeInput1
             // 
@@ -261,32 +291,6 @@
             this.comboBoxEx2.Size = new System.Drawing.Size(133, 26);
             this.comboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx2.TabIndex = 0;
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Image = global::GUI.Resource.App_xeyes_icon;
-            this.buttonX1.Location = new System.Drawing.Point(585, 6);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(116, 37);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 2;
-            this.buttonX1.Text = "Xem trước";
-            // 
-            // btnThietlap
-            // 
-            this.btnThietlap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnThietlap.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnThietlap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThietlap.Image = global::GUI.Resource.Printer_icon;
-            this.btnThietlap.Location = new System.Drawing.Point(707, 6);
-            this.btnThietlap.Name = "btnThietlap";
-            this.btnThietlap.Size = new System.Drawing.Size(116, 37);
-            this.btnThietlap.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThietlap.TabIndex = 1;
-            this.btnThietlap.Text = "In";
             // 
             // ucBaocaoBenhnhan
             // 

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn1 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn2 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn3 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn7 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn8 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn9 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn10 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.lblphanquyen = new DevComponents.DotNetBar.LabelX();
             this.pnlNhomnguoidung = new DevComponents.DotNetBar.PanelEx();
@@ -49,6 +49,8 @@
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnThietlap = new DevComponents.DotNetBar.ButtonX();
             this.pnlNhomnguoidung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
             this.panelEx2.SuspendLayout();
@@ -60,21 +62,21 @@
             this.superGridControl1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
             this.superGridControl1.Location = new System.Drawing.Point(0, 117);
             this.superGridControl1.Name = "superGridControl1";
-            gridColumn1.HeaderText = "STT";
-            gridColumn1.Name = "";
-            gridColumn2.HeaderText = "Đơn vị thu";
-            gridColumn2.Name = "";
-            gridColumn3.HeaderText = "Nhóm dịch vụ";
-            gridColumn3.Name = "";
-            gridColumn4.HeaderText = "Số hóa đơn";
-            gridColumn4.Name = "";
-            gridColumn5.HeaderText = "Tổng tiền";
-            gridColumn5.Name = "";
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn1);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn2);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn3);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn4);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn5);
+            gridColumn6.HeaderText = "STT";
+            gridColumn6.Name = "";
+            gridColumn7.HeaderText = "Đơn vị thu";
+            gridColumn7.Name = "";
+            gridColumn8.HeaderText = "Nhóm dịch vụ";
+            gridColumn8.Name = "";
+            gridColumn9.HeaderText = "Số hóa đơn";
+            gridColumn9.Name = "";
+            gridColumn10.HeaderText = "Tổng tiền";
+            gridColumn10.Name = "";
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn6);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn7);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn8);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn9);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn10);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Vertical;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
             this.superGridControl1.Size = new System.Drawing.Size(838, 344);
@@ -296,6 +298,8 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.btnThietlap);
+            this.panelEx2.Controls.Add(this.buttonX1);
             this.panelEx2.Controls.Add(this.labelX5);
             this.panelEx2.Controls.Add(this.labelX4);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -319,7 +323,7 @@
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.ForeColor = System.Drawing.Color.Red;
-            this.labelX5.Location = new System.Drawing.Point(690, 12);
+            this.labelX5.Location = new System.Drawing.Point(409, 12);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(116, 23);
             this.labelX5.TabIndex = 2;
@@ -332,11 +336,37 @@
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX4.Location = new System.Drawing.Point(588, 12);
+            this.labelX4.Location = new System.Drawing.Point(307, 12);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(75, 23);
             this.labelX4.TabIndex = 1;
             this.labelX4.Text = "Tổng cộng";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonX1.Image = global::GUI.Resource.App_xeyes_icon;
+            this.buttonX1.Location = new System.Drawing.Point(587, 5);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(116, 37);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 4;
+            this.buttonX1.Text = "Xem trước";
+            // 
+            // btnThietlap
+            // 
+            this.btnThietlap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThietlap.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThietlap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThietlap.Image = global::GUI.Resource.Printer_icon;
+            this.btnThietlap.Location = new System.Drawing.Point(709, 5);
+            this.btnThietlap.Name = "btnThietlap";
+            this.btnThietlap.Size = new System.Drawing.Size(116, 37);
+            this.btnThietlap.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThietlap.TabIndex = 5;
+            this.btnThietlap.Text = "In";
             // 
             // ucThongkeDoanhthu
             // 
@@ -373,5 +403,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX2;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInput2;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnThietlap;
     }
 }

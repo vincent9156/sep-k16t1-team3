@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI.Resource.background;
+            this.BackgroundImage = global::GUI.Resource.Sexy_Nurse;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "ucBackground";
             this.Size = new System.Drawing.Size(850, 379);
