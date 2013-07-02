@@ -48,6 +48,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="NguoiDung_DA.cs" />
     <Compile Include="NhomNguoiDung_DA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

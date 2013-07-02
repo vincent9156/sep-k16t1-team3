@@ -8,12 +8,13 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
@@ -308,6 +309,7 @@ namespace DA
         private ObjectSet<sysdiagram> _sysdiagrams;
 
         #endregion
+
         #region AddTo Methods
     
         /// <summary>
@@ -423,11 +425,11 @@ namespace DA
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region Entities
     
     /// <summary>
@@ -454,6 +456,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -556,6 +559,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -582,6 +586,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -606,6 +611,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -732,6 +738,7 @@ namespace DA
         partial void OnDiaChiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -758,6 +765,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -786,6 +794,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -888,6 +897,7 @@ namespace DA
         partial void OnTenBenhNhanChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -968,6 +978,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -996,6 +1007,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1074,6 +1086,7 @@ namespace DA
         partial void OnMaBanChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1154,6 +1167,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1178,6 +1192,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1232,6 +1247,7 @@ namespace DA
         partial void OnTenChucNangChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1258,6 +1274,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1284,6 +1301,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1365,6 +1383,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1445,6 +1464,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1469,6 +1489,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1619,6 +1640,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -1683,6 +1705,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -1717,6 +1740,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -1987,6 +2011,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2165,6 +2190,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2189,6 +2215,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2291,6 +2318,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2317,6 +2345,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2343,6 +2372,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2469,6 +2499,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2555,6 +2586,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2579,6 +2611,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2681,6 +2714,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2729,6 +2763,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2753,6 +2788,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -2855,6 +2891,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -2903,6 +2940,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -2931,6 +2969,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3081,6 +3120,7 @@ namespace DA
         partial void OnTrangThaiChanged();
 
         #endregion
+
     
         #region Navigation Properties
     
@@ -3205,6 +3245,7 @@ namespace DA
         }
 
         #endregion
+
     }
     
     /// <summary>
@@ -3233,6 +3274,7 @@ namespace DA
         }
 
         #endregion
+
         #region Primitive Properties
     
         /// <summary>
@@ -3359,9 +3401,11 @@ namespace DA
         partial void OndefinitionChanged();
 
         #endregion
+
     
     }
 
     #endregion
+
     
 }

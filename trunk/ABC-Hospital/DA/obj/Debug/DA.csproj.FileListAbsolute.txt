@@ -20,3 +20,11 @@ C:\Users\K\Desktop\SEP\ABC-Hospital\DA\bin\Debug\DO.pdb
 C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\DA.dll
 C:\Users\K\Desktop\SEP\ABC-Hospital\DA\obj\Debug\DA.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\bin\Debug\DA.dll.config
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\bin\Debug\DA.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\bin\Debug\DA.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\bin\Debug\DO.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\bin\Debug\DO.pdb
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\obj\Debug\DA.csprojResolveAssemblyReference.cache
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\obj\Debug\DA.dll
+D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\DA\obj\Debug\DA.pdb

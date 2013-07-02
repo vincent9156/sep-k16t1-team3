@@ -151,6 +151,11 @@ namespace GUI
             _chkTrangThai.Checked = dsNhom[0]._TrangThai.Value;
 
         }
+
+        private void pnlTieude_Click(object sender, EventArgs e)
+        {
+
+        }
         
 
 
