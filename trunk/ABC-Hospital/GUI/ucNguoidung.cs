@@ -14,7 +14,7 @@ namespace GUI
         public ucNguoidung()
         {
             InitializeComponent();
-            lblDatetime.Text = BL.Hamdungchung.Updatetime();
+            lblDatetime.Text = BL.HamDungChung_BL.Updatetime();
         }
 
         private void lblThanhpho_Click(object sender, EventArgs e)
