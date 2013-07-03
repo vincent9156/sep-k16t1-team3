@@ -8,15 +8,14 @@ namespace DA
 {
     public class NguoiDung_DA
     {
-        /// <summary>
-        /// Hàm lấy danh sách người dùng từ db lên
-        /// </summary>
-        /// <returns></returns>
-        public static List<NguoiDung_DO> LayNguoiDung(){
-            List<NguoiDung_DO> dsNguoiDung = new List<NguoiDung_DO>();
-            using (Entities sh = new Entities())
+        // Lấy danh sách người dùng từ csdl
+        public static List<NguoiDung_DO> LayNguoiDung()
+        {
+            List<NguoiDung_DO> dsNguoidung = new List<NguoiDung_DO>();
+            using (Entities tk = new Entities())
             {
-                var query = from u in sh.NguoiDungs select u;
+                var query = from u in tk.NguoiDungs
+                            select u;
                 foreach (var row in query)
                 {
                     NguoiDung_DO us = new NguoiDung_DO();
@@ -25,32 +24,109 @@ namespace DA
                     us._TenNguoiDung = row.TenNguoiDung;
                     us._MatKhau = row.MatKhau;
                     us._TrangThai = row.TrangThai;
-                    dsNguoiDung.Add(us);
+                    dsNguoidung.Add(us);
                 }
             }
-            return dsNguoiDung;
+            return dsNguoidung;
         }
-        /// <summary>
-        /// Hàm giá trị lớn nhất trong mã người dùng
-        /// </summary>
-        /// <returns></returns>
-        public static String LayMaLonNhat(string manhom)
+        // Lấy danh sách người dùng theo nhóm người dùng
+        public static List<NguoiDung_DO> LayNguoiDungTheoMaNhom(string manhom)
         {
-            string maLonNhat;
-            using (Entities sh = new Entities())
+            List<NguoiDung_DO> dsNguoidung = new List<NguoiDung_DO>();
+            using (Entities tk = new Entities())
             {
-                var query = from u in sh.NguoiDungs 
+                var query = from u in tk.NguoiDungs
                             where u.MaNhom == manhom
                             select u;
-                NguoiDung_DO us = new NguoiDung_DO();
                 foreach (var row in query)
                 {
-                    
+                    NguoiDung_DO us = new NguoiDung_DO();
                     us._MaNguoiDung = row.MaNguoiDung;
+                    us._MaNhom = row.MaNhom;
+                    us._TenNguoiDung = row.TenNguoiDung;
+                    us._MatKhau = row.MatKhau;
+                    us._TrangThai = row.TrangThai;
+                    dsNguoidung.Add(us);
                 }
-                maLonNhat = us._MaNguoiDung.ToString();
             }
-            return maLonNhat;
+
+            return dsNguoidung;
+        }
+        // Thêm 1 người dùng vào csdl
+        public static void ThemNguoiDung(string manguoidung, string manhom, string tennguoidung, string matkhau, bool trangthai)
+        {
+            using (Entities tk = new Entities())
+            {
+                NguoiDung ng = new NguoiDung();
+                ng.MaNguoiDung = manguoidung;
+                ng.MaNhom = manhom;
+                ng.TenNguoiDung = tennguoidung;
+                ng.MatKhau = matkhau;
+                ng.TrangThai = trangthai;
+                tk.AddToNguoiDungs(ng);
+                tk.SaveChanges();
+            }
+        }
+        // Cập nhật người dùng đã có sẵn trong csdl
+        public static void CapNhatNguoiDung(string manguoidung, string manhom, string tennguoidung, string matkhau, bool trangthai)
+        {
+            using (Entities tk = new Entities())
+            {
+                var query = (from u in tk.NguoiDungs
+                             where u.MaNguoiDung == manguoidung
+                             select u).First();
+                query.MaNguoiDung = manguoidung;
+                query.MaNhom = manhom;
+                query.TenNguoiDung = tennguoidung;
+                query.MatKhau = matkhau;
+                query.TrangThai = trangthai;
+
+                tk.SaveChanges();
+            }
+        }
+        // Tìm kiếm người dùng theo mã
+        public static List<NguoiDung_DO> TimKiemTheoMa(string manguoidung)
+        {
+            List<NguoiDung_DO> dsnguoidung = new List<NguoiDung_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NguoiDungs
+                            where u.MaNguoiDung.ToLower().Contains(manguoidung.ToLower())
+                            select u;
+                foreach (var row in query)
+                {
+                    NguoiDung_DO us = new NguoiDung_DO();
+                    us._MaNguoiDung = row.MaNguoiDung;
+                    us._MaNhom = row.MaNhom;
+                    us._TenNguoiDung = row.TenNguoiDung;
+                    us._MatKhau = row.MatKhau;
+                    us._TrangThai = row.TrangThai;
+                    dsnguoidung.Add(us);
+                }
+            }
+            return dsnguoidung;
+        }
+        // Tìm kiếm người dùng theo tên
+        public static List<NguoiDung_DO> TimKiemTheoTen(string tennguoidung)
+        {
+            List<NguoiDung_DO> dsnguoidung = new List<NguoiDung_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NguoiDungs
+                            where u.TenNguoiDung.ToLower().Contains(tennguoidung.ToLower())
+                            select u;
+                foreach (var row in query)
+                {
+                    NguoiDung_DO us = new NguoiDung_DO();
+                    us._MaNguoiDung = row.MaNguoiDung;
+                    us._MaNhom = row.MaNhom;
+                    us._TenNguoiDung = row.TenNguoiDung;
+                    us._MatKhau = row.MatKhau;
+                    us._TrangThai = row.TrangThai;
+                    dsnguoidung.Add(us);
+                }
+            }
+            return dsnguoidung;
         }
     }
 }
