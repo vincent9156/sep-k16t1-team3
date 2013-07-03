@@ -25,3 +25,12 @@ D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\BL\bin\Debug\DO.pdb
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\BL\obj\Debug\BL.dll
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\BL\obj\Debug\BL.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\BL.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\BL.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\DA.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\DO.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\DA.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\bin\Debug\DO.pdb
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\obj\Debug\BL.dll
+C:\Users\K\Desktop\SEP\ABC-Hospital\BL\obj\Debug\BL.pdb
