@@ -38,10 +38,6 @@ namespace BL
         {
             return DA.NhomNguoiDung_DA.LayNhomNguoiDungTheoTen();
         }
-        //Tìm mã nhóm theo tên nhóm
-        public static String TimMaNhomNguoiDung(string tennhom)
-        {
-            return DA.NhomNguoiDung_DA.TimMaNhomNguoiDung(tennhom);
-        }
+
     }
 }
