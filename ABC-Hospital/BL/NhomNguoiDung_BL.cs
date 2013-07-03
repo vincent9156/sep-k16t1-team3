@@ -33,11 +33,6 @@ namespace BL
         {
             return DA.NhomNguoiDung_DA.TimKiemTheoTen(ten);
         }
-        // Hàm lấy nhóm người dùng theo mã
-        public static List<NhomNguoiDung_DO> LayNhomNguoiDungTheoMa(string manhom)
-        {
-            return DA.NhomNguoiDung_DA.LayNhomNguoiDungTheoMa(manhom);
-        }
         //Hàm lấy danh sách tên nhóm người dùng
         public static List<NhomNguoiDung_DO> LayNhomNguoiDungTheoTen()
         {

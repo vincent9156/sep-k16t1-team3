@@ -124,31 +124,6 @@ namespace DA
             return dsNhom;
         }
         /// <summary>
-        /// Hàm hiển thị nhóm người dùng theo mã
-        /// </summary>
-        /// <param name="manhom"></param>
-        /// <returns></returns>
-        public static List<NhomNguoiDung_DO> LayNhomNguoiDungTheoMa(string manhom)
-        {
-            List<NhomNguoiDung_DO> dsNhom = new List<NhomNguoiDung_DO>();
-            using (Entities tk = new Entities())
-            {
-                var query = from u in tk.NhomNguoiDungs
-                            where u.MaNhom == manhom
-                            select u;
-                foreach (var row in query)
-                {
-                    NhomNguoiDung_DO us = new NhomNguoiDung_DO();
-                    us._MaNhom = row.MaNhom;
-                    us._TenNhom = row.TenNhom;
-                    us._MoTa = row.MoTa;
-                    us._TrangThai = row.TrangThai;
-                    dsNhom.Add(us);
-                }
-            }
-            return dsNhom;
-        }
-        /// <summary>
         /// Lấy danh sách tên nhóm người dùng
         /// </summary>
         /// <param name="manhom"></param>

@@ -254,7 +254,7 @@
     <EmbeddedResource Include="ucXacnhanthutien.resx">
       <DependentUpon>ucXacnhanthutien.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
+    <None Include="App.Config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

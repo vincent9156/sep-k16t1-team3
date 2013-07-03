@@ -35,10 +35,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucNhomnguoidung));
             this._txtMaNhom = new DevComponents.DotNetBar.Controls.TextBoxX();
             this._grdNhomNguoiDung = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
             this._txtMoTa = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.lblMota = new DevComponents.DotNetBar.LabelX();
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
@@ -67,6 +63,10 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tcDanhmucThanhpho = new DevComponents.DotNetBar.TabControl();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
             ((System.ComponentModel.ISupportInitialize)(this._grdNhomNguoiDung)).BeginInit();
             this.tabControlPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -89,6 +89,7 @@
             // 
             this._txtMaNhom.Border.Class = "TextBoxBorder";
             this._txtMaNhom.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this._txtMaNhom.Enabled = false;
             this._txtMaNhom.ForeColor = System.Drawing.Color.Black;
             this._txtMaNhom.Location = new System.Drawing.Point(76, 21);
             this._txtMaNhom.Name = "_txtMaNhom";
@@ -106,7 +107,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this._grdNhomNguoiDung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this._grdNhomNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._grdNhomNguoiDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this._grdNhomNguoiDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Ten,
@@ -121,10 +122,12 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this._grdNhomNguoiDung.DefaultCellStyle = dataGridViewCellStyle2;
             this._grdNhomNguoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._grdNhomNguoiDung.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this._grdNhomNguoiDung.EnableHeadersVisualStyles = false;
             this._grdNhomNguoiDung.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this._grdNhomNguoiDung.Location = new System.Drawing.Point(0, 44);
             this._grdNhomNguoiDung.Name = "_grdNhomNguoiDung";
+            this._grdNhomNguoiDung.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,35 +138,7 @@
             this._grdNhomNguoiDung.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this._grdNhomNguoiDung.Size = new System.Drawing.Size(513, 423);
             this._grdNhomNguoiDung.TabIndex = 1;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "_MaNhom";
-            this.Column2.HeaderText = "Mã nhóm";
-            this.Column2.Name = "Column2";
-            // 
-            // Ten
-            // 
-            this.Ten.DataPropertyName = "_TenNhom";
-            this.Ten.HeaderText = "Tên nhóm";
-            this.Ten.Name = "Ten";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "_MoTa";
-            this.Column3.HeaderText = "Mô tả";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.Checked = true;
-            this.Column4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.Column4.CheckValue = null;
-            this.Column4.DataPropertyName = "_TrangThai";
-            this.Column4.HeaderText = "Trạng thái SD";
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this._grdNhomNguoiDung.SelectionChanged += new System.EventHandler(this._grdNhomNguoiDung_SelectionChanged);
             // 
             // _txtMoTa
             // 
@@ -173,6 +148,7 @@
             // 
             this._txtMoTa.Border.Class = "TextBoxBorder";
             this._txtMoTa.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this._txtMoTa.Enabled = false;
             this._txtMoTa.ForeColor = System.Drawing.Color.Black;
             this._txtMoTa.Location = new System.Drawing.Point(0, 106);
             this._txtMoTa.Multiline = true;
@@ -449,6 +425,7 @@
             // 
             // 
             this._chkTrangThai.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this._chkTrangThai.Enabled = false;
             this._chkTrangThai.Location = new System.Drawing.Point(0, 257);
             this._chkTrangThai.Name = "_chkTrangThai";
             this._chkTrangThai.Size = new System.Drawing.Size(117, 23);
@@ -464,6 +441,7 @@
             // 
             this._txtTenNhom.Border.Class = "TextBoxBorder";
             this._txtTenNhom.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this._txtTenNhom.Enabled = false;
             this._txtTenNhom.ForeColor = System.Drawing.Color.Black;
             this._txtTenNhom.Location = new System.Drawing.Point(76, 53);
             this._txtTenNhom.Name = "_txtTenNhom";
@@ -525,7 +503,6 @@
             this.pnlTieude.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.pnlTieude.Style.GradientAngle = 90;
             this.pnlTieude.TabIndex = 3;
-            this.pnlTieude.Click += new System.EventHandler(this.pnlTieude_Click);
             // 
             // lblThanhpho
             // 
@@ -593,6 +570,50 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Mã thành phố";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.DataPropertyName = "_MaNhom";
+            this.Column2.FillWeight = 80F;
+            this.Column2.HeaderText = "Mã nhóm";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 80;
+            // 
+            // Ten
+            // 
+            this.Ten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Ten.DataPropertyName = "_TenNhom";
+            this.Ten.FillWeight = 120F;
+            this.Ten.HeaderText = "Tên nhóm";
+            this.Ten.Name = "Ten";
+            this.Ten.ReadOnly = true;
+            this.Ten.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "_MoTa";
+            this.Column3.FillWeight = 79.18781F;
+            this.Column3.HeaderText = "Mô tả";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column4.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Top;
+            this.Column4.Checked = true;
+            this.Column4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Column4.CheckValue = null;
+            this.Column4.DataPropertyName = "_TrangThai";
+            this.Column4.FillWeight = 80F;
+            this.Column4.HeaderText = "Trạng thái SD";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column4.Width = 80;
+            // 
             // ucNhomnguoidung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -648,10 +669,10 @@
         private DevComponents.DotNetBar.ButtonX _btnSua;
         private DevComponents.DotNetBar.ButtonX _btnLuu;
         private DevComponents.DotNetBar.ButtonX _btnThem;
+        private DevComponents.DotNetBar.ButtonX _btnHuy;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn Column4;
-        private DevComponents.DotNetBar.ButtonX _btnHuy;
     }
 }
