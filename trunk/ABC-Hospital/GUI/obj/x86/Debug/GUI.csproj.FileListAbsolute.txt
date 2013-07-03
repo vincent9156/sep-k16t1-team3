@@ -139,8 +139,6 @@ D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
 D:\CMU\nam 3\Team3_SEP_Hospital_Deliverables\ABC-Hospital\GUI\obj\x86\Debug\GUI.csproj.GenerateResource.Cache
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\GUI.exe.config
-C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
-C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\GUI.exe
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\GUI.pdb
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\bin\Debug\BL.dll
@@ -175,3 +173,5 @@ C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucThongkeDoanhthu.reso
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.ucXacnhanthutien.resources
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.exe
+C:\Users\K\Desktop\SEP\ABC-Hospital\GUI\obj\x86\Debug\GUI.pdb

@@ -14,6 +14,7 @@ namespace GUI
 {
     public partial class ucNhomnguoidung : UserControl
     {
+        // biến kiểm tra trạng thái các nút buttons
         bool add = false;
         bool update = false;
         public ucNhomnguoidung()
@@ -22,6 +23,7 @@ namespace GUI
             lblDatetime.Text = BL.HamDungChung_BL.Updatetime();
             LoadDSNhomNguoiDung();
         }
+        // Hàm load ds người dùng khi hiển thị lên
         private void LoadDSNhomNguoiDung()
         {
             _grdNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.LayNhomNguoiDung();
@@ -31,6 +33,7 @@ namespace GUI
             _btnSua.Enabled = true;
             _btnHuy.Enabled = false;
         }
+        // Hàm trả về giá trị rỗng của các components khi người dùng thêm mới 1 record
         private void ResetTextValue()
         {
             _txtMaNhom.Text = "";
@@ -39,6 +42,7 @@ namespace GUI
             _chkTrangThai.Checked = false;
             
         }
+        // Hàm kiểm tra hợp lệ khi người dùng nhập vào
         private bool KiemtraHopLe()
         {
             if (_txtMaNhom.Text == "" || _txtTenNhom.Text =="")
@@ -47,7 +51,7 @@ namespace GUI
             }
             return true;
         }
-
+        // Sử kiến click các buttons Thêm/Sửa/Xóa
         private void _btnThem_Click(object sender, EventArgs e)
         {
             // trạng thái button
@@ -66,13 +70,12 @@ namespace GUI
 
             ResetTextValue();
         }
-
         private void _btnLuu_Click(object sender, EventArgs e)
         {
             
             if (add == true) // Thêm
             {
-                if (KiemtraHopLe() == true)
+                if (KiemtraHopLe() == true || KiemTraMaNguoiDung() == true)
                 {
                     try
                     {
@@ -82,7 +85,7 @@ namespace GUI
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Đã có lỗi xảy ra! Quá trình thêm thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Mã " + _txtMaNhom.Text + " đã có trong hệ thống, hoặc có 1 số lỗi xảy ra! \n Đề nghị xem lại quá trình thao tác dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -115,10 +118,7 @@ namespace GUI
                 _txtMoTa.Enabled = false;
                 _chkTrangThai.Enabled = false;
             }
-
-         
         }
-
         private void _btnSua_Click(object sender, EventArgs e)
         {
             // trạng thái button
@@ -151,7 +151,7 @@ namespace GUI
             _txtMoTa.Enabled = false;
             _chkTrangThai.Enabled = false;
         }
-
+        // Sự kiện thay đổi text box ( tìm kiếm theo mã )
         private void _TimTheoMa_TextChanged(object sender, EventArgs e)
         {
             if (_txtTimTheoMa.Text == "")
@@ -163,7 +163,7 @@ namespace GUI
                 _grdNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.TimKiemTheoMa(_txtTimTheoMa.Text);
             }
         }
-
+        // Sự kiện thay đổi text box ( tìm kiếm theo tên )
         private void _TimTheoTen_TextChanged_1(object sender, EventArgs e)
         {
             if (_txtTimTheoTen.Text == "")
@@ -175,6 +175,7 @@ namespace GUI
                 _grdNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.TimKiemTheoTen(_txtTimTheoTen.Text);
             }
         }
+        // Hàm lấy dự liệu từ datagirdview hiển thị sang các componets detail
         private void XemChiTietNhomNguoiDung(int pos)
         {
             try
@@ -198,13 +199,24 @@ namespace GUI
             {}
 
         }
-
+        // Hàm bắt sự kiện click chuột vào các row trên datagirdview
         private void _grdNhomNguoiDung_SelectionChanged(object sender, EventArgs e)
         {
             int pos = _grdNhomNguoiDung.CurrentCell.RowIndex;
             XemChiTietNhomNguoiDung(pos);
         }
-
+        // Hàm kiểm tra mã người dùng đã có trong csdl chưa
+        private bool KiemTraMaNguoiDung()
+        {
+            for (int i = 0; i < _grdNhomNguoiDung.RowCount; i++)
+            {
+                if (_txtMaNhom.Text == _grdNhomNguoiDung.Rows[i].Cells[0].Value.ToString())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         
 
 
