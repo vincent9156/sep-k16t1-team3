@@ -38,19 +38,12 @@
             this._lblTimkiem = new DevComponents.DotNetBar.LabelX();
             this._txtTimmaso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this._lblTimmaso = new DevComponents.DotNetBar.LabelX();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._btnThem = new DevComponents.DotNetBar.ButtonX();
             this.pnlTieude = new DevComponents.DotNetBar.PanelEx();
             this.lblThanhpho = new DevComponents.DotNetBar.LabelX();
             this.chbTrangthai = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBoxEx2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -60,12 +53,21 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pnlArea2 = new DevComponents.DotNetBar.PanelEx();
             this.gpThongtinchitiet = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this._btnSua = new DevComponents.DotNetBar.ButtonX();
+            this._btnLuu = new DevComponents.DotNetBar.ButtonX();
             this.lblMaso = new DevComponents.DotNetBar.LabelX();
             this.lblDatetime = new DevComponents.DotNetBar.LabelX();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.taiDanhmucQuan = new DevComponents.DotNetBar.TabItem(this.components);
-            this._btnSua = new DevComponents.DotNetBar.ButtonX();
-            this._btnLuu = new DevComponents.DotNetBar.ButtonX();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
+            this._btnHuy = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1.SuspendLayout();
             this.pnlTieude.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
@@ -165,26 +167,6 @@
             this._lblTimmaso.TabIndex = 8;
             this._lblTimmaso.Text = "Tìm mã số";
             // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên phòng ban";
-            this.Column2.Name = "Column2";
-            // 
-            // Column4
-            // 
-            this.Column4.Checked = true;
-            this.Column4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.Column4.CheckValue = null;
-            this.Column4.HeaderText = "Trạng thái SD";
-            this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Số lượng phòng";
-            this.Column5.Name = "Column5";
-            // 
             // labelX5
             // 
             // 
@@ -201,19 +183,13 @@
             this.labelX5.Text = "Chi tiết phòng ban";
             this.labelX5.Click += new System.EventHandler(this.labelX5_Click);
             // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Mô tả";
-            this.Column3.HeaderText = "Mô tả";
-            this.Column3.Name = "Column3";
-            // 
             // _btnThem
             // 
             this._btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this._btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this._btnThem.Location = new System.Drawing.Point(9, 327);
+            this._btnThem.Location = new System.Drawing.Point(0, 327);
             this._btnThem.Name = "_btnThem";
-            this._btnThem.Size = new System.Drawing.Size(91, 38);
+            this._btnThem.Size = new System.Drawing.Size(70, 38);
             this._btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this._btnThem.TabIndex = 36;
             this._btnThem.Text = "Thêm";
@@ -280,6 +256,7 @@
             this.Column1,
             this.Ten,
             this.Column2,
+            this.Column6,
             this.Column3,
             this.Column5,
             this.Column4});
@@ -307,36 +284,13 @@
             this.dataGridViewX1.Size = new System.Drawing.Size(513, 423);
             this.dataGridViewX1.TabIndex = 1;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã số";
-            this.Column1.Name = "Column1";
-            // 
-            // Ten
-            // 
-            this.Ten.DataPropertyName = "Tên thành phố";
-            this.Ten.HeaderText = "Loại phòng ban";
-            this.Ten.Name = "Ten";
-            // 
-            // comboBoxEx2
-            // 
-            this.comboBoxEx2.DisplayMember = "Text";
-            this.comboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx2.FormattingEnabled = true;
-            this.comboBoxEx2.ItemHeight = 20;
-            this.comboBoxEx2.Location = new System.Drawing.Point(111, 77);
-            this.comboBoxEx2.Name = "comboBoxEx2";
-            this.comboBoxEx2.Size = new System.Drawing.Size(176, 26);
-            this.comboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx2.TabIndex = 32;
-            // 
             // comboBoxEx1
             // 
             this.comboBoxEx1.DisplayMember = "Text";
             this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBoxEx1.FormattingEnabled = true;
             this.comboBoxEx1.ItemHeight = 20;
-            this.comboBoxEx1.Location = new System.Drawing.Point(110, 45);
+            this.comboBoxEx1.Location = new System.Drawing.Point(117, 9);
             this.comboBoxEx1.Name = "comboBoxEx1";
             this.comboBoxEx1.Size = new System.Drawing.Size(176, 26);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -352,7 +306,7 @@
             this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX1.Enabled = false;
             this.textBoxX1.ForeColor = System.Drawing.Color.Black;
-            this.textBoxX1.Location = new System.Drawing.Point(110, 12);
+            this.textBoxX1.Location = new System.Drawing.Point(117, 80);
             this.textBoxX1.Name = "textBoxX1";
             this.textBoxX1.Size = new System.Drawing.Size(108, 26);
             this.textBoxX1.TabIndex = 31;
@@ -379,9 +333,9 @@
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(-1, 76);
+            this.labelX4.Location = new System.Drawing.Point(-1, 47);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(116, 23);
+            this.labelX4.Size = new System.Drawing.Size(113, 23);
             this.labelX4.TabIndex = 23;
             this.labelX4.Text = "Tên phòng ban";
             // 
@@ -405,9 +359,9 @@
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(-2, 46);
+            this.labelX2.Location = new System.Drawing.Point(0, 12);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(117, 23);
+            this.labelX2.Size = new System.Drawing.Size(112, 23);
             this.labelX2.TabIndex = 23;
             this.labelX2.Text = "Loại phòng ban";
             // 
@@ -454,12 +408,13 @@
             this.gpThongtinchitiet.BackColor = System.Drawing.Color.Transparent;
             this.gpThongtinchitiet.CanvasColor = System.Drawing.SystemColors.Control;
             this.gpThongtinchitiet.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.gpThongtinchitiet.Controls.Add(this._btnHuy);
+            this.gpThongtinchitiet.Controls.Add(this.textBox1);
             this.gpThongtinchitiet.Controls.Add(this.labelX5);
             this.gpThongtinchitiet.Controls.Add(this._btnSua);
             this.gpThongtinchitiet.Controls.Add(this._btnLuu);
             this.gpThongtinchitiet.Controls.Add(this._btnThem);
             this.gpThongtinchitiet.Controls.Add(this.chbTrangthai);
-            this.gpThongtinchitiet.Controls.Add(this.comboBoxEx2);
             this.gpThongtinchitiet.Controls.Add(this.comboBoxEx1);
             this.gpThongtinchitiet.Controls.Add(this.textBoxX1);
             this.gpThongtinchitiet.Controls.Add(this.textBoxX2);
@@ -503,6 +458,30 @@
             this.gpThongtinchitiet.TabIndex = 4;
             this.gpThongtinchitiet.Text = "Thông tin chi tiết";
             // 
+            // _btnSua
+            // 
+            this._btnSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this._btnSua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this._btnSua.Image = global::GUI.Resource.Pencil_icon;
+            this._btnSua.Location = new System.Drawing.Point(151, 327);
+            this._btnSua.Name = "_btnSua";
+            this._btnSua.Size = new System.Drawing.Size(70, 38);
+            this._btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this._btnSua.TabIndex = 35;
+            this._btnSua.Text = "Sửa";
+            // 
+            // _btnLuu
+            // 
+            this._btnLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this._btnLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this._btnLuu.Image = global::GUI.Resource.Save_icon;
+            this._btnLuu.Location = new System.Drawing.Point(76, 327);
+            this._btnLuu.Name = "_btnLuu";
+            this._btnLuu.Size = new System.Drawing.Size(70, 38);
+            this._btnLuu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this._btnLuu.TabIndex = 37;
+            this._btnLuu.Text = "Lưu";
+            // 
             // lblMaso
             // 
             this.lblMaso.BackColor = System.Drawing.Color.Transparent;
@@ -510,7 +489,7 @@
             // 
             // 
             this.lblMaso.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblMaso.Location = new System.Drawing.Point(0, 12);
+            this.lblMaso.Location = new System.Drawing.Point(2, 83);
             this.lblMaso.Name = "lblMaso";
             this.lblMaso.Size = new System.Drawing.Size(75, 23);
             this.lblMaso.TabIndex = 22;
@@ -554,29 +533,66 @@
             this.taiDanhmucQuan.Name = "taiDanhmucQuan";
             this.taiDanhmucQuan.Text = "Danh mục quận huyện";
             // 
-            // _btnSua
+            // textBox1
             // 
-            this._btnSua.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this._btnSua.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this._btnSua.Image = global::GUI.Resource.Pencil_icon;
-            this._btnSua.Location = new System.Drawing.Point(199, 327);
-            this._btnSua.Name = "_btnSua";
-            this._btnSua.Size = new System.Drawing.Size(87, 38);
-            this._btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this._btnSua.TabIndex = 35;
-            this._btnSua.Text = "Sửa";
+            this.textBox1.Location = new System.Drawing.Point(117, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(176, 26);
+            this.textBox1.TabIndex = 40;
             // 
-            // _btnLuu
+            // Column1
             // 
-            this._btnLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this._btnLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this._btnLuu.Image = global::GUI.Resource.Save_icon;
-            this._btnLuu.Location = new System.Drawing.Point(108, 327);
-            this._btnLuu.Name = "_btnLuu";
-            this._btnLuu.Size = new System.Drawing.Size(85, 38);
-            this._btnLuu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this._btnLuu.TabIndex = 37;
-            this._btnLuu.Text = "Lưu";
+            this.Column1.HeaderText = "Mã số";
+            this.Column1.Name = "Column1";
+            // 
+            // Ten
+            // 
+            this.Ten.DataPropertyName = "Tên thành phố";
+            this.Ten.HeaderText = "Loại phòng ban";
+            this.Ten.Name = "Ten";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tên phòng ban";
+            this.Column2.Name = "Column2";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Nhóm dịch vụ";
+            this.Column6.Name = "Column6";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Mô tả";
+            this.Column3.HeaderText = "Mô tả";
+            this.Column3.Name = "Column3";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Số lượng phòng";
+            this.Column5.Name = "Column5";
+            // 
+            // Column4
+            // 
+            this.Column4.Checked = true;
+            this.Column4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Column4.CheckValue = null;
+            this.Column4.HeaderText = "Trạng thái SD";
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // _btnHuy
+            // 
+            this._btnHuy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this._btnHuy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this._btnHuy.Image = global::GUI.Resource.Close_2_icon;
+            this._btnHuy.Location = new System.Drawing.Point(226, 327);
+            this._btnHuy.Name = "_btnHuy";
+            this._btnHuy.Size = new System.Drawing.Size(70, 38);
+            this._btnHuy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this._btnHuy.TabIndex = 41;
+            this._btnHuy.Text = "Hủy";
             // 
             // ucPhongBan
             // 
@@ -594,6 +610,7 @@
             this.splitContainer1.ResumeLayout(false);
             this.pnlArea2.ResumeLayout(false);
             this.gpThongtinchitiet.ResumeLayout(false);
+            this.gpThongtinchitiet.PerformLayout();
             this.tabControlPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -607,21 +624,14 @@
         private DevComponents.DotNetBar.LabelX _lblTimkiem;
         private DevComponents.DotNetBar.Controls.TextBoxX _txtTimmaso;
         private DevComponents.DotNetBar.LabelX _lblTimmaso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn Column4;
         private DevComponents.DotNetBar.ButtonX _btnLuu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private DevComponents.DotNetBar.ButtonX _btnSua;
         private DevComponents.DotNetBar.ButtonX _btnThem;
         private DevComponents.DotNetBar.PanelEx pnlTieude;
         private DevComponents.DotNetBar.LabelX lblThanhpho;
         private DevComponents.DotNetBar.Controls.CheckBoxX chbTrangthai;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx2;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
@@ -635,5 +645,14 @@
         private DevComponents.DotNetBar.LabelX lblDatetime;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
         private DevComponents.DotNetBar.TabItem taiDanhmucQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn Column4;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevComponents.DotNetBar.ButtonX _btnHuy;
     }
 }
