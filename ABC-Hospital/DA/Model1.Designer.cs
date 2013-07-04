@@ -23,8 +23,8 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("Model", "FK_ChiTietHoaDon_DichVu", "DichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.DichVu), "ChiTietHoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietHoaDon), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_ChiTietHoaDon_HoaDon", "HoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.HoaDon), "ChiTietHoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietHoaDon), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_ChiTietPhongBan_PhongBan", "PhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.PhongBan), "ChiTietPhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietPhongBan), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_ChucNang", "ChucNang", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.ChucNang), "ChucNangNguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNguoiDung), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_NhomNguoiDung1", "NhomNguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.NhomNguoiDung), "ChucNangNguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNguoiDung), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_ChucNang", "ChucNang", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.ChucNang), "ChucNangNhom", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNhom), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_NhomNguoiDung1", "NhomNguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.NhomNguoiDung), "ChucNangNhom", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNhom), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_DichVu_NhomDichVu", "NhomDichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DA.NhomDichVu), "DichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.DichVu), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_HoaDon_NguoiDung", "NguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.NguoiDung), "HoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.HoaDon), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_HoaDon_NguoiDung1", "NguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.NguoiDung), "HoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.HoaDon), true)]
@@ -166,18 +166,18 @@ namespace DA
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<ChucNangNguoiDung> ChucNangNguoiDungs
+        public ObjectSet<ChucNangNhom> ChucNangNhoms
         {
             get
             {
-                if ((_ChucNangNguoiDungs == null))
+                if ((_ChucNangNhoms == null))
                 {
-                    _ChucNangNguoiDungs = base.CreateObjectSet<ChucNangNguoiDung>("ChucNangNguoiDungs");
+                    _ChucNangNhoms = base.CreateObjectSet<ChucNangNhom>("ChucNangNhoms");
                 }
-                return _ChucNangNguoiDungs;
+                return _ChucNangNhoms;
             }
         }
-        private ObjectSet<ChucNangNguoiDung> _ChucNangNguoiDungs;
+        private ObjectSet<ChucNangNhom> _ChucNangNhoms;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -351,11 +351,11 @@ namespace DA
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the ChucNangNguoiDungs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the ChucNangNhoms EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddToChucNangNguoiDungs(ChucNangNguoiDung chucNangNguoiDung)
+        public void AddToChucNangNhoms(ChucNangNhom chucNangNhom)
         {
-            base.AddObject("ChucNangNguoiDungs", chucNangNguoiDung);
+            base.AddObject("ChucNangNhoms", chucNangNhom);
         }
     
         /// <summary>
@@ -1170,7 +1170,7 @@ namespace DA
         /// Create a new ChucNang object.
         /// </summary>
         /// <param name="maChucNang">Initial value of the MaChucNang property.</param>
-        public static ChucNang CreateChucNang(global::System.String maChucNang)
+        public static ChucNang CreateChucNang(global::System.Int32 maChucNang)
         {
             ChucNang chucNang = new ChucNang();
             chucNang.MaChucNang = maChucNang;
@@ -1185,7 +1185,7 @@ namespace DA
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String MaChucNang
+        public global::System.Int32 MaChucNang
         {
             get
             {
@@ -1197,14 +1197,14 @@ namespace DA
                 {
                     OnMaChucNangChanging(value);
                     ReportPropertyChanging("MaChucNang");
-                    _MaChucNang = StructuralObject.SetValidValue(value, false);
+                    _MaChucNang = StructuralObject.SetValidValue(value);
                     ReportPropertyChanged("MaChucNang");
                     OnMaChucNangChanged();
                 }
             }
         }
-        private global::System.String _MaChucNang;
-        partial void OnMaChucNangChanging(global::System.String value);
+        private global::System.Int32 _MaChucNang;
+        partial void OnMaChucNangChanging(global::System.Int32 value);
         partial void OnMaChucNangChanged();
     
         /// <summary>
@@ -1241,18 +1241,18 @@ namespace DA
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_PhanQuyen_ChucNang", "ChucNangNguoiDung")]
-        public EntityCollection<ChucNangNguoiDung> ChucNangNguoiDungs
+        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_PhanQuyen_ChucNang", "ChucNangNhom")]
+        public EntityCollection<ChucNangNhom> ChucNangNhoms
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ChucNangNguoiDung>("Model.FK_PhanQuyen_ChucNang", "ChucNangNguoiDung");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ChucNangNhom>("Model.FK_PhanQuyen_ChucNang", "ChucNangNhom");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ChucNangNguoiDung>("Model.FK_PhanQuyen_ChucNang", "ChucNangNguoiDung", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ChucNangNhom>("Model.FK_PhanQuyen_ChucNang", "ChucNangNhom", value);
                 }
             }
         }
@@ -1263,24 +1263,24 @@ namespace DA
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="Model", Name="ChucNangNguoiDung")]
+    [EdmEntityTypeAttribute(NamespaceName="Model", Name="ChucNangNhom")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class ChucNangNguoiDung : EntityObject
+    public partial class ChucNangNhom : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new ChucNangNguoiDung object.
+        /// Create a new ChucNangNhom object.
         /// </summary>
         /// <param name="maChucNang">Initial value of the MaChucNang property.</param>
         /// <param name="maNhom">Initial value of the MaNhom property.</param>
-        public static ChucNangNguoiDung CreateChucNangNguoiDung(global::System.String maChucNang, global::System.String maNhom)
+        public static ChucNangNhom CreateChucNangNhom(global::System.Int32 maChucNang, global::System.String maNhom)
         {
-            ChucNangNguoiDung chucNangNguoiDung = new ChucNangNguoiDung();
-            chucNangNguoiDung.MaChucNang = maChucNang;
-            chucNangNguoiDung.MaNhom = maNhom;
-            return chucNangNguoiDung;
+            ChucNangNhom chucNangNhom = new ChucNangNhom();
+            chucNangNhom.MaChucNang = maChucNang;
+            chucNangNhom.MaNhom = maNhom;
+            return chucNangNhom;
         }
 
         #endregion
@@ -1291,7 +1291,7 @@ namespace DA
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String MaChucNang
+        public global::System.Int32 MaChucNang
         {
             get
             {
@@ -1303,14 +1303,14 @@ namespace DA
                 {
                     OnMaChucNangChanging(value);
                     ReportPropertyChanging("MaChucNang");
-                    _MaChucNang = StructuralObject.SetValidValue(value, false);
+                    _MaChucNang = StructuralObject.SetValidValue(value);
                     ReportPropertyChanged("MaChucNang");
                     OnMaChucNangChanged();
                 }
             }
         }
-        private global::System.String _MaChucNang;
-        partial void OnMaChucNangChanging(global::System.String value);
+        private global::System.Int32 _MaChucNang;
+        partial void OnMaChucNangChanging(global::System.Int32 value);
         partial void OnMaChucNangChanged();
     
         /// <summary>
@@ -2864,18 +2864,18 @@ namespace DA
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_PhanQuyen_NhomNguoiDung1", "ChucNangNguoiDung")]
-        public EntityCollection<ChucNangNguoiDung> ChucNangNguoiDungs
+        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_PhanQuyen_NhomNguoiDung1", "ChucNangNhom")]
+        public EntityCollection<ChucNangNhom> ChucNangNhoms
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ChucNangNguoiDung>("Model.FK_PhanQuyen_NhomNguoiDung1", "ChucNangNguoiDung");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ChucNangNhom>("Model.FK_PhanQuyen_NhomNguoiDung1", "ChucNangNhom");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ChucNangNguoiDung>("Model.FK_PhanQuyen_NhomNguoiDung1", "ChucNangNguoiDung", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ChucNangNhom>("Model.FK_PhanQuyen_NhomNguoiDung1", "ChucNangNhom", value);
                 }
             }
         }

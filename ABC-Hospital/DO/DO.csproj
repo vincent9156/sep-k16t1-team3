@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNangNhom_DO.cs" />
+    <Compile Include="ChucNang_DO.cs" />
+    <Compile Include="LoaiPhongBan_DO.cs" />
     <Compile Include="NguoiDung_DO.cs" />
     <Compile Include="NhomNguoiDung_DO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -49,9 +49,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ChucNangNguoiDungs">
-      <EntityTypeMapping TypeName="Model.ChucNangNguoiDung">
-        <MappingFragment StoreEntitySet="ChucNangNguoiDung">
+    <EntitySetMapping Name="ChucNangNhoms">
+      <EntityTypeMapping TypeName="Model.ChucNangNhom">
+        <MappingFragment StoreEntitySet="ChucNangNhom">
           <ScalarProperty Name="MaChucNang" ColumnName="MaChucNang" />
           <ScalarProperty Name="MaNhom" ColumnName="MaNhom" />
           <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
