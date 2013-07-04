@@ -30,7 +30,7 @@ namespace DA
             return dsLoaiPhongBan;
         }
         /// <summary>
-        /// Hàm lấy danh sách phòng ban từ db lên
+        /// Hàm lấy danh sách loại phòng ban từ db lên
         /// </summary>
         /// <returns></returns>
         public static void ThemLoaiPhongBan(string manhom, string tenloai, string mota, bool trangthai)
