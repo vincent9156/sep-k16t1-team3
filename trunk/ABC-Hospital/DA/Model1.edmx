@@ -11,7 +11,7 @@
           <EntitySet Name="ChiTietHoaDon" EntityType="Model.Store.ChiTietHoaDon" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ChiTietPhongBan" EntityType="Model.Store.ChiTietPhongBan" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ChucNang" EntityType="Model.Store.ChucNang" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ChucNangNguoiDung" EntityType="Model.Store.ChucNangNguoiDung" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ChucNangNhom" EntityType="Model.Store.ChucNangNhom" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DichVu" EntityType="Model.Store.DichVu" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="HoaDon" EntityType="Model.Store.HoaDon" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="LoaiPhongBan" EntityType="Model.Store.LoaiPhongBan" store:Type="Tables" Schema="dbo" />
@@ -62,11 +62,11 @@
           </AssociationSet>
           <AssociationSet Name="FK_PhanQuyen_ChucNang" Association="Model.Store.FK_PhanQuyen_ChucNang">
             <End Role="ChucNang" EntitySet="ChucNang" />
-            <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDung" />
+            <End Role="ChucNangNhom" EntitySet="ChucNangNhom" />
           </AssociationSet>
           <AssociationSet Name="FK_PhanQuyen_NhomNguoiDung1" Association="Model.Store.FK_PhanQuyen_NhomNguoiDung1">
             <End Role="NhomNguoiDung" EntitySet="NhomNguoiDung" />
-            <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDung" />
+            <End Role="ChucNangNhom" EntitySet="ChucNangNhom" />
           </AssociationSet>
           <AssociationSet Name="FK_PhongBan_LoaiPhongBan" Association="Model.Store.FK_PhongBan_LoaiPhongBan">
             <End Role="LoaiPhongBan" EntitySet="LoaiPhongBan" />
@@ -117,15 +117,15 @@
           <Key>
             <PropertyRef Name="MaChucNang" />
           </Key>
-          <Property Name="MaChucNang" Type="varchar" Nullable="false" MaxLength="4" />
-          <Property Name="TenChucNang" Type="nvarchar" MaxLength="30" />
+          <Property Name="MaChucNang" Type="int" Nullable="false" />
+          <Property Name="TenChucNang" Type="nvarchar" MaxLength="80" />
         </EntityType>
-        <EntityType Name="ChucNangNguoiDung">
+        <EntityType Name="ChucNangNhom">
           <Key>
             <PropertyRef Name="MaChucNang" />
             <PropertyRef Name="MaNhom" />
           </Key>
-          <Property Name="MaChucNang" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="MaChucNang" Type="int" Nullable="false" />
           <Property Name="MaNhom" Type="varchar" Nullable="false" MaxLength="2" />
           <Property Name="TrangThai" Type="bit" />
         </EntityType>
@@ -336,24 +336,24 @@
         </Association>
         <Association Name="FK_PhanQuyen_ChucNang">
           <End Role="ChucNang" Type="Model.Store.ChucNang" Multiplicity="1" />
-          <End Role="ChucNangNguoiDung" Type="Model.Store.ChucNangNguoiDung" Multiplicity="*" />
+          <End Role="ChucNangNhom" Type="Model.Store.ChucNangNhom" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ChucNang">
               <PropertyRef Name="MaChucNang" />
             </Principal>
-            <Dependent Role="ChucNangNguoiDung">
+            <Dependent Role="ChucNangNhom">
               <PropertyRef Name="MaChucNang" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PhanQuyen_NhomNguoiDung1">
           <End Role="NhomNguoiDung" Type="Model.Store.NhomNguoiDung" Multiplicity="1" />
-          <End Role="ChucNangNguoiDung" Type="Model.Store.ChucNangNguoiDung" Multiplicity="*" />
+          <End Role="ChucNangNhom" Type="Model.Store.ChucNangNhom" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NhomNguoiDung">
               <PropertyRef Name="MaNhom" />
             </Principal>
-            <Dependent Role="ChucNangNguoiDung">
+            <Dependent Role="ChucNangNhom">
               <PropertyRef Name="MaNhom" />
             </Dependent>
           </ReferentialConstraint>
@@ -424,7 +424,7 @@
           <EntitySet Name="ChiTietHoaDons" EntityType="Model.ChiTietHoaDon" />
           <EntitySet Name="ChiTietPhongBans" EntityType="Model.ChiTietPhongBan" />
           <EntitySet Name="ChucNangs" EntityType="Model.ChucNang" />
-          <EntitySet Name="ChucNangNguoiDungs" EntityType="Model.ChucNangNguoiDung" />
+          <EntitySet Name="ChucNangNhoms" EntityType="Model.ChucNangNhom" />
           <EntitySet Name="DichVus" EntityType="Model.DichVu" />
           <EntitySet Name="HoaDons" EntityType="Model.HoaDon" />
           <EntitySet Name="LoaiPhongBans" EntityType="Model.LoaiPhongBan" />
@@ -455,11 +455,11 @@
           </AssociationSet>
           <AssociationSet Name="FK_PhanQuyen_ChucNang" Association="Model.FK_PhanQuyen_ChucNang">
             <End Role="ChucNang" EntitySet="ChucNangs" />
-            <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDungs" />
+            <End Role="ChucNangNhom" EntitySet="ChucNangNhoms" />
           </AssociationSet>
           <AssociationSet Name="FK_PhanQuyen_NhomNguoiDung1" Association="Model.FK_PhanQuyen_NhomNguoiDung1">
             <End Role="NhomNguoiDung" EntitySet="NhomNguoiDungs" />
-            <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDungs" />
+            <End Role="ChucNangNhom" EntitySet="ChucNangNhoms" />
           </AssociationSet>
           <AssociationSet Name="FK_DichVu_NhomDichVu" Association="Model.FK_DichVu_NhomDichVu">
             <End Role="NhomDichVu" EntitySet="NhomDichVus" />
@@ -536,20 +536,20 @@
           <Key>
             <PropertyRef Name="MaChucNang" />
           </Key>
-          <Property Name="MaChucNang" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
-          <Property Name="TenChucNang" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
-          <NavigationProperty Name="ChucNangNguoiDungs" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNang" ToRole="ChucNangNguoiDung" />
+          <Property Name="MaChucNang" Type="Int32" Nullable="false" />
+          <Property Name="TenChucNang" Type="String" MaxLength="80" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ChucNangNhoms" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNang" ToRole="ChucNangNhom" />
         </EntityType>
-        <EntityType Name="ChucNangNguoiDung">
+        <EntityType Name="ChucNangNhom">
           <Key>
             <PropertyRef Name="MaChucNang" />
             <PropertyRef Name="MaNhom" />
           </Key>
-          <Property Name="MaChucNang" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="MaChucNang" Type="Int32" Nullable="false" />
           <Property Name="MaNhom" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
           <Property Name="TrangThai" Type="Boolean" />
-          <NavigationProperty Name="ChucNang" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNangNguoiDung" ToRole="ChucNang" />
-          <NavigationProperty Name="NhomNguoiDung" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="ChucNangNguoiDung" ToRole="NhomNguoiDung" />
+          <NavigationProperty Name="ChucNang" Relationship="Model.FK_PhanQuyen_ChucNang" FromRole="ChucNangNhom" ToRole="ChucNang" />
+          <NavigationProperty Name="NhomNguoiDung" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="ChucNangNhom" ToRole="NhomNguoiDung" />
         </EntityType>
         <EntityType Name="DichVu">
           <Key>
@@ -627,7 +627,7 @@
           <Property Name="TenNhom" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="MoTa" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="TrangThai" Type="Boolean" />
-          <NavigationProperty Name="ChucNangNguoiDungs" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="NhomNguoiDung" ToRole="ChucNangNguoiDung" />
+          <NavigationProperty Name="ChucNangNhoms" Relationship="Model.FK_PhanQuyen_NhomNguoiDung1" FromRole="NhomNguoiDung" ToRole="ChucNangNhom" />
           <NavigationProperty Name="NguoiDungs" Relationship="Model.FK_NguoiDung_NhomNguoiDung" FromRole="NhomNguoiDung" ToRole="NguoiDung" />
         </EntityType>
         <EntityType Name="PhongBan">
@@ -717,24 +717,24 @@
         </Association>
         <Association Name="FK_PhanQuyen_ChucNang">
           <End Role="ChucNang" Type="Model.ChucNang" Multiplicity="1" />
-          <End Role="ChucNangNguoiDung" Type="Model.ChucNangNguoiDung" Multiplicity="*" />
+          <End Role="ChucNangNhom" Type="Model.ChucNangNhom" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ChucNang">
               <PropertyRef Name="MaChucNang" />
             </Principal>
-            <Dependent Role="ChucNangNguoiDung">
+            <Dependent Role="ChucNangNhom">
               <PropertyRef Name="MaChucNang" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PhanQuyen_NhomNguoiDung1">
           <End Role="NhomNguoiDung" Type="Model.NhomNguoiDung" Multiplicity="1" />
-          <End Role="ChucNangNguoiDung" Type="Model.ChucNangNguoiDung" Multiplicity="*" />
+          <End Role="ChucNangNhom" Type="Model.ChucNangNhom" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NhomNguoiDung">
               <PropertyRef Name="MaNhom" />
             </Principal>
-            <Dependent Role="ChucNangNguoiDung">
+            <Dependent Role="ChucNangNhom">
               <PropertyRef Name="MaNhom" />
             </Dependent>
           </ReferentialConstraint>
@@ -857,7 +857,7 @@
             <ScalarProperty Name="MaChucNang" ColumnName="MaChucNang" />
             <ScalarProperty Name="TenChucNang" ColumnName="TenChucNang" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
-          <EntitySetMapping Name="ChucNangNguoiDungs"><EntityTypeMapping TypeName="Model.ChucNangNguoiDung"><MappingFragment StoreEntitySet="ChucNangNguoiDung">
+          <EntitySetMapping Name="ChucNangNhoms"><EntityTypeMapping TypeName="Model.ChucNangNhom"><MappingFragment StoreEntitySet="ChucNangNhom">
             <ScalarProperty Name="MaChucNang" ColumnName="MaChucNang" />
             <ScalarProperty Name="MaNhom" ColumnName="MaNhom" />
             <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
@@ -949,7 +949,7 @@
         <EntityTypeShape EntityType="Model.ChiTietHoaDon" Width="1.5" PointX="7.5" PointY="7.625" Height="2.1725878906249996" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.ChiTietPhongBan" Width="1.5" PointX="5.25" PointY="13.125" Height="1.9802864583333317" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.ChucNang" Width="1.5" PointX="0.75" PointY="2.125" Height="1.5956835937499996" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.ChucNangNguoiDung" Width="1.5" PointX="3" PointY="4" Height="1.9802864583333322" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ChucNangNhom" Width="1.5" PointX="3" PointY="4" Height="1.9802864583333322" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.DichVu" Width="1.5" PointX="5.25" PointY="2.375" Height="2.5571907552083317" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.HoaDon" Width="1.5" PointX="5.25" PointY="6.625" Height="4.0956022135416674" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.LoaiPhongBan" Width="1.5" PointX="0.75" PointY="11.625" Height="1.9802864583333317" IsExpanded="true" />

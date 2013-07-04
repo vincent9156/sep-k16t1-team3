@@ -6,7 +6,7 @@
     <EntitySet Name="ChiTietHoaDon" EntityType="Model.Store.ChiTietHoaDon" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ChiTietPhongBan" EntityType="Model.Store.ChiTietPhongBan" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ChucNang" EntityType="Model.Store.ChucNang" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="ChucNangNguoiDung" EntityType="Model.Store.ChucNangNguoiDung" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChucNangNhom" EntityType="Model.Store.ChucNangNhom" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="DichVu" EntityType="Model.Store.DichVu" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="HoaDon" EntityType="Model.Store.HoaDon" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="LoaiPhongBan" EntityType="Model.Store.LoaiPhongBan" store:Type="Tables" Schema="dbo" />
@@ -57,11 +57,11 @@
     </AssociationSet>
     <AssociationSet Name="FK_PhanQuyen_ChucNang" Association="Model.Store.FK_PhanQuyen_ChucNang">
       <End Role="ChucNang" EntitySet="ChucNang" />
-      <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDung" />
+      <End Role="ChucNangNhom" EntitySet="ChucNangNhom" />
     </AssociationSet>
     <AssociationSet Name="FK_PhanQuyen_NhomNguoiDung1" Association="Model.Store.FK_PhanQuyen_NhomNguoiDung1">
       <End Role="NhomNguoiDung" EntitySet="NhomNguoiDung" />
-      <End Role="ChucNangNguoiDung" EntitySet="ChucNangNguoiDung" />
+      <End Role="ChucNangNhom" EntitySet="ChucNangNhom" />
     </AssociationSet>
     <AssociationSet Name="FK_PhongBan_LoaiPhongBan" Association="Model.Store.FK_PhongBan_LoaiPhongBan">
       <End Role="LoaiPhongBan" EntitySet="LoaiPhongBan" />
@@ -112,15 +112,15 @@
     <Key>
       <PropertyRef Name="MaChucNang" />
     </Key>
-    <Property Name="MaChucNang" Type="varchar" Nullable="false" MaxLength="4" />
-    <Property Name="TenChucNang" Type="nvarchar" MaxLength="30" />
+    <Property Name="MaChucNang" Type="int" Nullable="false" />
+    <Property Name="TenChucNang" Type="nvarchar" MaxLength="80" />
   </EntityType>
-  <EntityType Name="ChucNangNguoiDung">
+  <EntityType Name="ChucNangNhom">
     <Key>
       <PropertyRef Name="MaChucNang" />
       <PropertyRef Name="MaNhom" />
     </Key>
-    <Property Name="MaChucNang" Type="varchar" Nullable="false" MaxLength="4" />
+    <Property Name="MaChucNang" Type="int" Nullable="false" />
     <Property Name="MaNhom" Type="varchar" Nullable="false" MaxLength="2" />
     <Property Name="TrangThai" Type="bit" />
   </EntityType>
@@ -331,24 +331,24 @@
   </Association>
   <Association Name="FK_PhanQuyen_ChucNang">
     <End Role="ChucNang" Type="Model.Store.ChucNang" Multiplicity="1" />
-    <End Role="ChucNangNguoiDung" Type="Model.Store.ChucNangNguoiDung" Multiplicity="*" />
+    <End Role="ChucNangNhom" Type="Model.Store.ChucNangNhom" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ChucNang">
         <PropertyRef Name="MaChucNang" />
       </Principal>
-      <Dependent Role="ChucNangNguoiDung">
+      <Dependent Role="ChucNangNhom">
         <PropertyRef Name="MaChucNang" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PhanQuyen_NhomNguoiDung1">
     <End Role="NhomNguoiDung" Type="Model.Store.NhomNguoiDung" Multiplicity="1" />
-    <End Role="ChucNangNguoiDung" Type="Model.Store.ChucNangNguoiDung" Multiplicity="*" />
+    <End Role="ChucNangNhom" Type="Model.Store.ChucNangNhom" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhomNguoiDung">
         <PropertyRef Name="MaNhom" />
       </Principal>
-      <Dependent Role="ChucNangNguoiDung">
+      <Dependent Role="ChucNangNhom">
         <PropertyRef Name="MaNhom" />
       </Dependent>
     </ReferentialConstraint>

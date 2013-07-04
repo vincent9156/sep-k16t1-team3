@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNangNhom_DA.cs" />
+    <Compile Include="ChucNang_DA.cs" />
+    <Compile Include="LoaiPhongBan_DA.cs" />
     <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

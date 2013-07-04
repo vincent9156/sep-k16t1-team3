@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChucNangNhom_BL.cs" />
+    <Compile Include="ChucNang_BL.cs" />
     <Compile Include="HamDungChung_BL.cs" />
+    <Compile Include="LoaiPhongBan_BL.cs" />
     <Compile Include="NguoiDung_BL.cs" />
     <Compile Include="NhomNguoiDung_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
