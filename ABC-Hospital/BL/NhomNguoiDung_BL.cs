@@ -8,6 +8,7 @@ namespace BL
 {
     public class NhomNguoiDung_BL
     {
+
         // Hàm lấy danh sách nhóm người dùng
         public static List<NhomNguoiDung_DO> LayNhomNguoiDung()
         {
