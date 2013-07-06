@@ -88,7 +88,7 @@ namespace GUI
                     {
                         try
                         {
-                            BL.LoaiPhongBan_BL.CapNhaLoaiPhongBan(_txtMaSo.Text, _txtLoaiPhongBan.Text, _tbxMoTa.Text, _chkTrangThai.Checked);
+                            BL.LoaiPhongBan_BL.CapNhatLoaiPhongBan(_txtMaSo.Text, _txtLoaiPhongBan.Text, _tbxMoTa.Text, _chkTrangThai.Checked);
                             MessageBox.Show("Đã cập nhật loại phòng ban " + _txtLoaiPhongBan.Text + " thành công!");
                             LoadDSLoaiPhongBan();
                         }
@@ -103,6 +103,9 @@ namespace GUI
             _btnThem.Enabled = true;
             _btnLuu.Enabled = false;
             _btnHuy.Enabled = false;
+            _txtLoaiPhongBan.Enabled = false;
+            _tbxMoTa.Enabled = false;
+            _chkTrangThai.Enabled = false;
             add = false;
             sua = false;
         }
