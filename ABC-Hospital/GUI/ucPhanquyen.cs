@@ -20,8 +20,9 @@ namespace GUI
 
         private void ucPhanquyen_Load(object sender, EventArgs e)
         {
-            LoadDSChucNang();
+            //LoadDSChucNang();
             LoadDSNhomNguoiDung();
+            LoadDSPhanQuyenTheoNhom();
         }
         private void LoadDSChucNang()
         {
@@ -39,33 +40,82 @@ namespace GUI
 
         private void _btnThietLap_Click(object sender, EventArgs e)
         {
-            
-                try
+
+            try
+            {
+                int n = _grdChucNang.RowCount;
+                foreach (DataGridViewRow r in _grdChucNang.Rows)
                 {
-                    int n = _grdChucNang.RowCount;
-                    for (int i = 0; i < n; i++)
+                    string machucnang = r.Cells[1].Value.ToString();
+                    //   MessageBox.Show(machucnang);
+                    int cn;
+                    Int32.TryParse(machucnang, out cn);
+                    string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
+                    //MessageBox.Show(manhom);
+                    bool trangthai = false;
+                    DataGridViewCheckBoxCell chk = r.Cells[0] as DataGridViewCheckBoxCell;
+                    if (Convert.ToBoolean(chk.Value) == true)
                     {
-                        string machucnang = _grdChucNang.Rows[i].Cells[1].Value.ToString();
-                        int cn;
-                        Int32.TryParse(machucnang, out cn);
-                        string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
-                        bool trangthai = false;
-                        if (_grdChucNang.Rows[i].Cells[0].Value.ToString() == "True")
-                        {
-                            trangthai = true;
-                        }
-                        BL.ChucNangNhom_BL.ThemQuyenChoNhom(cn, manhom, trangthai);
+                        trangthai = true;
+                        //MessageBox.Show("" + trangthai);
                     }
-                    MessageBox.Show("Đã thêm thành công!");
+                    if (Convert.ToBoolean(chk.Value) == false)
+                    {
+
+                        trangthai = false;
+                        // MessageBox.Show(""+trangthai);
+
+                    }
+                    BL.ChucNangNhom_BL.ThemQuyenChoNhom(cn, manhom, trangthai);
 
                 }
-                catch (Exception)
+                MessageBox.Show("Đã thêm thành công!");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Đã có lỗi xảy ra", "Thông báo lỗi");
+            }
+          
+        }
+
+        private void _grdChucNang_SelectionChanged(object sender, EventArgs e)
+        {
+            int pos = _grdChucNang.CurrentCell.RowIndex;
+            if (_grdChucNang.Rows[pos].Cells[0].Value == null)
+            {
+               // textBox1.Text = "null";
+            }
+        }
+        private bool KiemTraDaPhanQuyen(string manhom)
+        {
+            DataGridView grd = new DataGridView();
+            grd.DataSource = BL.ChucNangNhom_BL.LayChucNangTatCa();
+            foreach (DataGridViewRow r in grd.Rows)
+            {
+                if (manhom == r.Cells[1].Value.ToString())
                 {
-                    MessageBox.Show("Đã có lỗi xảy ra!Vui lòng xem lại nhé!","Thông báo lỗi!");   
-                    
-                }
-                
-            
+                    return true;
+                }  
+            }
+            return false;
+        }
+
+        private void _cboNhomNguoiDung_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
+            if (KiemTraDaPhanQuyen(manhom) == true)
+            {
+                _grdChucNang.DataSource = DA.ChucNangNhom_DA.LayChucNangNhom(manhom);
+            }
+            else
+            {
+                _grdChucNang.DataSource = BL.ChucNang_BL.LayChucNang();
+            }
+        }
+        private void LoadDSPhanQuyenTheoNhom()
+        {
+            _grdChucNang.DataSource = BL.ChucNangNhom_BL.LayChucNangNhom(_cboNhomNguoiDung.SelectedValue.ToString());
         }
     }
 }
