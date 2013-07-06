@@ -8,6 +8,11 @@ namespace BL
 {
     public class ChucNangNhom_BL
     {
+        // Hàm lấy danh sách chức năng của tất cả các nhóm
+        public static List<ChucNangNhom_DO> LayChucNangTatCa()
+        {
+            return DA.ChucNangNhom_DA.LayChucNangNhomTatCa();
+        }
         // Hàm lấy danh sách quyền theo nhóm
         public static List<ChucNangNhom_DO> LayChucNangNhom(string manhom)
         {
