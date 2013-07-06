@@ -8,6 +8,26 @@ namespace DA
 {
     public class ChucNangNhom_DA
     {
+        // Lấy danh sách phân quyền của tất cả các nhóm
+        public static List<ChucNangNhom_DO> LayChucNangNhomTatCa()
+        {
+            List<ChucNangNhom_DO> dsChucnang = new List<ChucNangNhom_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.ChucNangNhoms
+                            select u;
+                foreach (var row in query)
+                {
+                    ChucNangNhom_DO us = new ChucNangNhom_DO();
+                    us._MaChucNang = row.MaChucNang;
+                    us._MaNhom = row.MaNhom;
+                    us._TrangThai = row.TrangThai;
+                    dsChucnang.Add(us);
+                }
+            }
+            return dsChucnang;
+        }
+
         // Lấy danh sách phân quyền của nhóm từ csdl
         public static List<ChucNangNhom_DO> LayChucNangNhom(string manhom)
         {
