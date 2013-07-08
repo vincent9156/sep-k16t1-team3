@@ -67,7 +67,7 @@ namespace DA
             using (Entities tk = new Entities())
             {
                 var query = (from u in tk.ChucNangNhoms
-                             where u.MaChucNang == machucnang
+                             where u.MaChucNang == machucnang && u.MaNhom == manhom
                              select u).First();
                 query.MaChucNang = machucnang;
                 query.MaNhom = manhom;

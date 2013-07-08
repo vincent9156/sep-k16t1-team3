@@ -19,7 +19,7 @@ namespace DA
                 foreach (var row in query)
                 {
                     ChucNang_DO us = new ChucNang_DO();
-                    us._MaChucNang = row.MaChucNang;
+                    //us._MaChucNang = row.MaChucNang;
                     us._TenChucNang = row.TenChucNang;
                     dsChucnang.Add(us);
                 }
