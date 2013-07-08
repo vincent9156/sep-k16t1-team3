@@ -23,9 +23,9 @@ namespace GUI
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-            Main key = new Main();
-            key.ShowDialog();
-            this.Close();
+            //Main key = new Main();
+            //key.ShowDialog();
+            //this.Close();
             
         }
     }

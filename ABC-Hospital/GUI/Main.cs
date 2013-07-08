@@ -6,14 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DA;
+using BL;
+using DO;
 
 namespace GUI
 {
     public partial class Main : Form
     {
-        public Main()
+        string username;
+        public Main(string usertruyen)
         {
             InitializeComponent();
+            username = usertruyen;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -22,6 +27,8 @@ namespace GUI
             mainload();
             //frmChonnhanvien lg = new frmChonnhanvien();
             //lg.ShowDialog();
+            //GiaoDienMacDinh();
+            HienThiPhanQuyen(username);
             
         }
         private void mainload()
@@ -144,5 +151,123 @@ namespace GUI
             temp.Dock = System.Windows.Forms.DockStyle.Fill;
         }
 
+        // Hàm hiển thị những quyền theo nhóm người dùng ( sử dụng tên tài khoản )
+        private void HienThiPhanQuyen(string username)
+        {
+            string manhom = username.Substring(0, 2);
+            List<ChucNangNhom_DO> dsQuyen = BL.DangNhap_BL.LayQuyen(manhom);
+            foreach (ChucNangNhom_DO qu in dsQuyen)
+            {
+                if (qu._TrangThai == true && qu._MaChucNang == 1)
+                {
+                    _rbbNhomNguoiDung.Visible = true;
+                    _rbpQuanlytaiKhoan.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 2)
+                {
+                    _rbbNguoiDung.Visible = true;
+                    _rbpQuanlytaiKhoan.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 3)
+                {
+                    _rbbPhanQuyen.Visible = true;
+                    _rbpQuanlytaiKhoan.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 4)
+                {
+                    _rbbLoaiPhongBan.Visible = true;
+                    _rbpQuanLyPhongBan.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 5)
+                {
+                    _rbbPhongban.Visible = true;
+                    _rbpQuanLyPhongBan.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 6)
+                {
+                    _rbbNhomdichvu.Visible = true;
+                    _rbpQuanLyDichVu.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 7)
+                {
+                    _rbbDichvu.Visible = true;
+                    _rbpQuanLyDichVu.Visible = true;
+                    _rbtQuantrihethong.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 8)
+                {
+                    _rbbLaphoadon.Visible = true;
+                    _rbpQuanlyHoadon.Visible = true;
+                    _rbtQuanlythungan.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 9)
+                {
+                    _rbbThutien.Visible = true;
+                    _rbpQuanlyHoadon.Visible = true;
+                    _rbtQuanlythungan.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 10)
+                {
+                    _rbbBaoCaoNhapLieu.Visible = true;
+                    _rbpDanhSachBienLai.Visible = true;
+                    _rbtThongKeBaoCao.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 11)
+                {
+                    _rbbBaoCaoThuTien.Visible = true;
+                    _rbpDanhSachBienLai.Visible = true;
+                    _rbtThongKeBaoCao.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 12)
+                {
+                    _rbbBaoCaoBenhNhan.Visible = true;
+                    _rbtThongKeBaoCao.Visible = true;
+                    _rbtThongKeBaoCao.Visible = true;
+                }
+                if (qu._TrangThai == true && qu._MaChucNang == 13)
+                {
+                    _rbbDoanhThu.Visible = true;
+                    _rbpThongKe.Visible = true;
+                    _rbtThongKeBaoCao.Visible = true;
+                }
+
+            }
+        }
+        
+        // Hàm ẩn tất cả from
+        private void GiaoDienMacDinh()
+        {
+            
+            _rbtQuantrihethong.Visible = false;
+            _rbpQuanlytaiKhoan.Visible = false;
+            _rbbNhomNguoiDung.Visible = false;
+            _rbbNguoiDung.Visible = false;
+            _rbbPhanQuyen.Visible = false;
+            _rbpQuanLyPhongBan.Visible = false;
+            _rbbLoaiPhongBan.Visible = false;
+            _rbbPhongban.Visible = false;
+            _rbpQuanLyDichVu.Visible = false;
+            _rbbNhomdichvu.Visible = false;
+            _rbbDichvu.Visible = false;
+            _rbtQuanlythungan.Visible = false;
+            _rbpQuanlyHoadon.Visible = false;
+            _rbbLaphoadon.Visible = false;
+            _rbbThutien.Visible = false;
+            _rbtThongKeBaoCao.Visible = false;
+            _rbpDanhSachBienLai.Visible = false;
+            _rbbBaoCaoNhapLieu.Visible = false;
+            _rbbBaoCaoThuTien.Visible = false;
+            _rbpDanhSachThuTien.Visible = false;
+            _rbbBaoCaoBenhNhan.Visible = false;
+            _rbpThongKe.Visible = false;
+            _rbbDoanhThu.Visible = false;
+            
+        }
     }
 }

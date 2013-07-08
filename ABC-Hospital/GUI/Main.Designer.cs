@@ -36,28 +36,28 @@
             this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonOrbMenuItem3 = new System.Windows.Forms.RibbonOrbMenuItem();
             this._rbtQuantrihethong = new System.Windows.Forms.RibbonTab();
-            this.rbpDanhsachtaikhoan = new System.Windows.Forms.RibbonPanel();
-            this.rbbUsergroup = new System.Windows.Forms.RibbonButton();
-            this.rbbNguoidung = new System.Windows.Forms.RibbonButton();
-            this._rbbPhanquyen = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel7 = new System.Windows.Forms.RibbonPanel();
-            this.rbbLoaiphongban = new System.Windows.Forms.RibbonButton();
-            this.rbbPhongban = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel8 = new System.Windows.Forms.RibbonPanel();
+            this._rbpQuanlytaiKhoan = new System.Windows.Forms.RibbonPanel();
+            this._rbbNhomNguoiDung = new System.Windows.Forms.RibbonButton();
+            this._rbbNguoiDung = new System.Windows.Forms.RibbonButton();
+            this._rbbPhanQuyen = new System.Windows.Forms.RibbonButton();
+            this._rbpQuanLyPhongBan = new System.Windows.Forms.RibbonPanel();
+            this._rbbLoaiPhongBan = new System.Windows.Forms.RibbonButton();
+            this._rbbPhongban = new System.Windows.Forms.RibbonButton();
+            this._rbpQuanLyDichVu = new System.Windows.Forms.RibbonPanel();
             this._rbbNhomdichvu = new System.Windows.Forms.RibbonButton();
             this._rbbDichvu = new System.Windows.Forms.RibbonButton();
-            this.rbtQuanlythungan = new System.Windows.Forms.RibbonTab();
-            this.rbpQuanlyHoadon = new System.Windows.Forms.RibbonPanel();
-            this.rbbLaphoadon = new System.Windows.Forms.RibbonButton();
-            this.rbbThutien = new System.Windows.Forms.RibbonButton();
-            this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
-            this.ribbonButton6 = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButton7 = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButton8 = new System.Windows.Forms.RibbonButton();
+            this._rbtQuanlythungan = new System.Windows.Forms.RibbonTab();
+            this._rbpQuanlyHoadon = new System.Windows.Forms.RibbonPanel();
+            this._rbbLaphoadon = new System.Windows.Forms.RibbonButton();
+            this._rbbThutien = new System.Windows.Forms.RibbonButton();
+            this._rbtThongKeBaoCao = new System.Windows.Forms.RibbonTab();
+            this._rbpDanhSachBienLai = new System.Windows.Forms.RibbonPanel();
+            this._rbbBaoCaoNhapLieu = new System.Windows.Forms.RibbonButton();
+            this._rbbBaoCaoThuTien = new System.Windows.Forms.RibbonButton();
+            this._rbpDanhSachThuTien = new System.Windows.Forms.RibbonPanel();
+            this._rbbBaoCaoBenhNhan = new System.Windows.Forms.RibbonButton();
+            this._rbpThongKe = new System.Windows.Forms.RibbonPanel();
+            this._rbbDoanhThu = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.rbpBaocao = new System.Windows.Forms.RibbonPanel();
             this.rbtBaocaothongke = new System.Windows.Forms.RibbonTab();
@@ -93,8 +93,8 @@
             this.rbbMain.Size = new System.Drawing.Size(834, 157);
             this.rbbMain.TabIndex = 0;
             this.rbbMain.Tabs.Add(this._rbtQuantrihethong);
-            this.rbbMain.Tabs.Add(this.rbtQuanlythungan);
-            this.rbbMain.Tabs.Add(this.ribbonTab1);
+            this.rbbMain.Tabs.Add(this._rbtQuanlythungan);
+            this.rbbMain.Tabs.Add(this._rbtThongKeBaoCao);
             this.rbbMain.TabsMargin = new System.Windows.Forms.Padding(12, 26, 20, 0);
             this.rbbMain.Text = "ribbon1";
             // 
@@ -129,69 +129,69 @@
             // 
             // _rbtQuantrihethong
             // 
-            this._rbtQuantrihethong.Panels.Add(this.rbpDanhsachtaikhoan);
-            this._rbtQuantrihethong.Panels.Add(this.ribbonPanel7);
-            this._rbtQuantrihethong.Panels.Add(this.ribbonPanel8);
+            this._rbtQuantrihethong.Panels.Add(this._rbpQuanlytaiKhoan);
+            this._rbtQuantrihethong.Panels.Add(this._rbpQuanLyPhongBan);
+            this._rbtQuantrihethong.Panels.Add(this._rbpQuanLyDichVu);
             this._rbtQuantrihethong.Text = "Quản trị hệ thống";
             // 
-            // rbpDanhsachtaikhoan
+            // _rbpQuanlytaiKhoan
             // 
-            this.rbpDanhsachtaikhoan.Items.Add(this.rbbUsergroup);
-            this.rbpDanhsachtaikhoan.Items.Add(this.rbbNguoidung);
-            this.rbpDanhsachtaikhoan.Items.Add(this._rbbPhanquyen);
-            this.rbpDanhsachtaikhoan.Text = "Quản lý tài khoản";
+            this._rbpQuanlytaiKhoan.Items.Add(this._rbbNhomNguoiDung);
+            this._rbpQuanlytaiKhoan.Items.Add(this._rbbNguoiDung);
+            this._rbpQuanlytaiKhoan.Items.Add(this._rbbPhanQuyen);
+            this._rbpQuanlytaiKhoan.Text = "Quản lý tài khoản";
             // 
-            // rbbUsergroup
+            // _rbbNhomNguoiDung
             // 
-            this.rbbUsergroup.Image = ((System.Drawing.Image)(resources.GetObject("rbbUsergroup.Image")));
-            this.rbbUsergroup.MinimumSize = new System.Drawing.Size(130, 0);
-            this.rbbUsergroup.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbUsergroup.SmallImage")));
-            this.rbbUsergroup.Text = "Nhóm người dùng";
-            this.rbbUsergroup.Click += new System.EventHandler(this.rbbUsergroup_Click);
+            this._rbbNhomNguoiDung.Image = ((System.Drawing.Image)(resources.GetObject("_rbbNhomNguoiDung.Image")));
+            this._rbbNhomNguoiDung.MinimumSize = new System.Drawing.Size(130, 0);
+            this._rbbNhomNguoiDung.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbNhomNguoiDung.SmallImage")));
+            this._rbbNhomNguoiDung.Text = "Nhóm người dùng";
+            this._rbbNhomNguoiDung.Click += new System.EventHandler(this.rbbUsergroup_Click);
             // 
-            // rbbNguoidung
+            // _rbbNguoiDung
             // 
-            this.rbbNguoidung.Image = global::GUI.Resource.User_red_icon;
-            this.rbbNguoidung.MinimumSize = new System.Drawing.Size(100, 0);
-            this.rbbNguoidung.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbNguoidung.SmallImage")));
-            this.rbbNguoidung.Text = "Người dùng";
-            this.rbbNguoidung.Click += new System.EventHandler(this.rbbNguoidung_Click);
+            this._rbbNguoiDung.Image = global::GUI.Resource.User_red_icon;
+            this._rbbNguoiDung.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbNguoiDung.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbNguoiDung.SmallImage")));
+            this._rbbNguoiDung.Text = "Người dùng";
+            this._rbbNguoiDung.Click += new System.EventHandler(this.rbbNguoidung_Click);
             // 
-            // _rbbPhanquyen
+            // _rbbPhanQuyen
             // 
-            this._rbbPhanquyen.Image = global::GUI.Resource.Keys_icon;
-            this._rbbPhanquyen.MinimumSize = new System.Drawing.Size(100, 0);
-            this._rbbPhanquyen.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbPhanquyen.SmallImage")));
-            this._rbbPhanquyen.Text = "Phân quyền";
-            this._rbbPhanquyen.Click += new System.EventHandler(this._rbbPhanquyen_Click);
+            this._rbbPhanQuyen.Image = global::GUI.Resource.Keys_icon;
+            this._rbbPhanQuyen.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbPhanQuyen.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbPhanQuyen.SmallImage")));
+            this._rbbPhanQuyen.Text = "Phân quyền";
+            this._rbbPhanQuyen.Click += new System.EventHandler(this._rbbPhanquyen_Click);
             // 
-            // ribbonPanel7
+            // _rbpQuanLyPhongBan
             // 
-            this.ribbonPanel7.Items.Add(this.rbbLoaiphongban);
-            this.ribbonPanel7.Items.Add(this.rbbPhongban);
-            this.ribbonPanel7.Text = "Quản lý phòng ban";
+            this._rbpQuanLyPhongBan.Items.Add(this._rbbLoaiPhongBan);
+            this._rbpQuanLyPhongBan.Items.Add(this._rbbPhongban);
+            this._rbpQuanLyPhongBan.Text = "Quản lý phòng ban";
             // 
-            // rbbLoaiphongban
+            // _rbbLoaiPhongBan
             // 
-            this.rbbLoaiphongban.Image = global::GUI.Resource.department_1_;
-            this.rbbLoaiphongban.MinimumSize = new System.Drawing.Size(100, 0);
-            this.rbbLoaiphongban.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbLoaiphongban.SmallImage")));
-            this.rbbLoaiphongban.Text = "Loại phòng ban";
-            this.rbbLoaiphongban.Click += new System.EventHandler(this.rbbLoaiphongban_Click);
+            this._rbbLoaiPhongBan.Image = global::GUI.Resource.department_1_;
+            this._rbbLoaiPhongBan.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbLoaiPhongBan.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbLoaiPhongBan.SmallImage")));
+            this._rbbLoaiPhongBan.Text = "Loại phòng ban";
+            this._rbbLoaiPhongBan.Click += new System.EventHandler(this.rbbLoaiphongban_Click);
             // 
-            // rbbPhongban
+            // _rbbPhongban
             // 
-            this.rbbPhongban.Image = global::GUI.Resource.logout_icon;
-            this.rbbPhongban.MinimumSize = new System.Drawing.Size(100, 0);
-            this.rbbPhongban.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbPhongban.SmallImage")));
-            this.rbbPhongban.Text = "Phòng ban";
-            this.rbbPhongban.Click += new System.EventHandler(this.rbbPhongban_Click);
+            this._rbbPhongban.Image = global::GUI.Resource.logout_icon;
+            this._rbbPhongban.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbPhongban.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbPhongban.SmallImage")));
+            this._rbbPhongban.Text = "Phòng ban";
+            this._rbbPhongban.Click += new System.EventHandler(this.rbbPhongban_Click);
             // 
-            // ribbonPanel8
+            // _rbpQuanLyDichVu
             // 
-            this.ribbonPanel8.Items.Add(this._rbbNhomdichvu);
-            this.ribbonPanel8.Items.Add(this._rbbDichvu);
-            this.ribbonPanel8.Text = "Quản lý dịch vụ";
+            this._rbpQuanLyDichVu.Items.Add(this._rbbNhomdichvu);
+            this._rbpQuanLyDichVu.Items.Add(this._rbbDichvu);
+            this._rbpQuanLyDichVu.Text = "Quản lý dịch vụ";
             // 
             // _rbbNhomdichvu
             // 
@@ -209,87 +209,87 @@
             this._rbbDichvu.Text = "Dịch vụ";
             this._rbbDichvu.Click += new System.EventHandler(this._rbbDichvu_Click);
             // 
-            // rbtQuanlythungan
+            // _rbtQuanlythungan
             // 
-            this.rbtQuanlythungan.Panels.Add(this.rbpQuanlyHoadon);
-            this.rbtQuanlythungan.Text = "Quản lý thu ngân";
+            this._rbtQuanlythungan.Panels.Add(this._rbpQuanlyHoadon);
+            this._rbtQuanlythungan.Text = "Quản lý thu ngân";
             // 
-            // rbpQuanlyHoadon
+            // _rbpQuanlyHoadon
             // 
-            this.rbpQuanlyHoadon.Items.Add(this.rbbLaphoadon);
-            this.rbpQuanlyHoadon.Items.Add(this.rbbThutien);
-            this.rbpQuanlyHoadon.Text = "Quản lý thu ngân";
+            this._rbpQuanlyHoadon.Items.Add(this._rbbLaphoadon);
+            this._rbpQuanlyHoadon.Items.Add(this._rbbThutien);
+            this._rbpQuanlyHoadon.Text = "Quản lý thu ngân";
             // 
-            // rbbLaphoadon
+            // _rbbLaphoadon
             // 
-            this.rbbLaphoadon.Image = global::GUI.Resource.invoice_icon;
-            this.rbbLaphoadon.MinimumSize = new System.Drawing.Size(100, 0);
-            this.rbbLaphoadon.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbLaphoadon.SmallImage")));
-            this.rbbLaphoadon.Text = "Lập hóa đơn";
-            this.rbbLaphoadon.Click += new System.EventHandler(this.rbbLaphoadon_Click);
+            this._rbbLaphoadon.Image = global::GUI.Resource.invoice_icon;
+            this._rbbLaphoadon.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbLaphoadon.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbLaphoadon.SmallImage")));
+            this._rbbLaphoadon.Text = "Lập hóa đơn";
+            this._rbbLaphoadon.Click += new System.EventHandler(this.rbbLaphoadon_Click);
             // 
-            // rbbThutien
+            // _rbbThutien
             // 
-            this.rbbThutien.Image = global::GUI.Resource.Cash_register_icon;
-            this.rbbThutien.MinimumSize = new System.Drawing.Size(100, 0);
-            this.rbbThutien.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbbThutien.SmallImage")));
-            this.rbbThutien.Text = "Thu tiền";
-            this.rbbThutien.Click += new System.EventHandler(this.rbbThutien_Click);
+            this._rbbThutien.Image = global::GUI.Resource.Cash_register_icon;
+            this._rbbThutien.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbThutien.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbThutien.SmallImage")));
+            this._rbbThutien.Text = "Thu tiền";
+            this._rbbThutien.Click += new System.EventHandler(this.rbbThutien_Click);
             // 
-            // ribbonTab1
+            // _rbtThongKeBaoCao
             // 
-            this.ribbonTab1.Panels.Add(this.ribbonPanel3);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel4);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel5);
-            this.ribbonTab1.Text = "Thống kê báo cáo";
+            this._rbtThongKeBaoCao.Panels.Add(this._rbpDanhSachBienLai);
+            this._rbtThongKeBaoCao.Panels.Add(this._rbpDanhSachThuTien);
+            this._rbtThongKeBaoCao.Panels.Add(this._rbpThongKe);
+            this._rbtThongKeBaoCao.Text = "Thống kê báo cáo";
             // 
-            // ribbonPanel3
+            // _rbpDanhSachBienLai
             // 
-            this.ribbonPanel3.Items.Add(this.ribbonButton4);
-            this.ribbonPanel3.Items.Add(this.ribbonButton6);
-            this.ribbonPanel3.Text = "Danh sách các biên lai";
+            this._rbpDanhSachBienLai.Items.Add(this._rbbBaoCaoNhapLieu);
+            this._rbpDanhSachBienLai.Items.Add(this._rbbBaoCaoThuTien);
+            this._rbpDanhSachBienLai.Text = "Danh sách các biên lai";
             // 
-            // ribbonButton4
+            // _rbbBaoCaoNhapLieu
             // 
-            this.ribbonButton4.Image = global::GUI.Resource.medical_report_icon;
-            this.ribbonButton4.MinimumSize = new System.Drawing.Size(80, 0);
-            this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
-            this.ribbonButton4.Text = "Nhân viên nhập liệu";
-            this.ribbonButton4.Click += new System.EventHandler(this.ribbonButton4_Click);
+            this._rbbBaoCaoNhapLieu.Image = global::GUI.Resource.medical_report_icon;
+            this._rbbBaoCaoNhapLieu.MinimumSize = new System.Drawing.Size(80, 0);
+            this._rbbBaoCaoNhapLieu.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbBaoCaoNhapLieu.SmallImage")));
+            this._rbbBaoCaoNhapLieu.Text = "Nhân viên nhập liệu";
+            this._rbbBaoCaoNhapLieu.Click += new System.EventHandler(this.ribbonButton4_Click);
             // 
-            // ribbonButton6
+            // _rbbBaoCaoThuTien
             // 
-            this.ribbonButton6.Image = global::GUI.Resource.medical_report_icon;
-            this.ribbonButton6.MinimumSize = new System.Drawing.Size(80, 0);
-            this.ribbonButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.SmallImage")));
-            this.ribbonButton6.Text = "Nhân viên thu tiền";
-            this.ribbonButton6.Click += new System.EventHandler(this.ribbonButton6_Click);
+            this._rbbBaoCaoThuTien.Image = global::GUI.Resource.medical_report_icon;
+            this._rbbBaoCaoThuTien.MinimumSize = new System.Drawing.Size(80, 0);
+            this._rbbBaoCaoThuTien.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbBaoCaoThuTien.SmallImage")));
+            this._rbbBaoCaoThuTien.Text = "Nhân viên thu tiền";
+            this._rbbBaoCaoThuTien.Click += new System.EventHandler(this.ribbonButton6_Click);
             // 
-            // ribbonPanel4
+            // _rbpDanhSachThuTien
             // 
-            this.ribbonPanel4.Items.Add(this.ribbonButton7);
-            this.ribbonPanel4.Text = "Danh sách thu tiền";
+            this._rbpDanhSachThuTien.Items.Add(this._rbbBaoCaoBenhNhan);
+            this._rbpDanhSachThuTien.Text = "Danh sách thu tiền";
             // 
-            // ribbonButton7
+            // _rbbBaoCaoBenhNhan
             // 
-            this.ribbonButton7.Image = global::GUI.Resource.medical_report_icon;
-            this.ribbonButton7.MinimumSize = new System.Drawing.Size(90, 0);
-            this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
-            this.ribbonButton7.Text = "Bệnh nhân";
-            this.ribbonButton7.Click += new System.EventHandler(this.ribbonButton7_Click);
+            this._rbbBaoCaoBenhNhan.Image = global::GUI.Resource.medical_report_icon;
+            this._rbbBaoCaoBenhNhan.MinimumSize = new System.Drawing.Size(90, 0);
+            this._rbbBaoCaoBenhNhan.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbBaoCaoBenhNhan.SmallImage")));
+            this._rbbBaoCaoBenhNhan.Text = "Bệnh nhân";
+            this._rbbBaoCaoBenhNhan.Click += new System.EventHandler(this.ribbonButton7_Click);
             // 
-            // ribbonPanel5
+            // _rbpThongKe
             // 
-            this.ribbonPanel5.Items.Add(this.ribbonButton8);
-            this.ribbonPanel5.Text = "Thống kê";
+            this._rbpThongKe.Items.Add(this._rbbDoanhThu);
+            this._rbpThongKe.Text = "Thống kê";
             // 
-            // ribbonButton8
+            // _rbbDoanhThu
             // 
-            this.ribbonButton8.Image = global::GUI.Resource.SEO_icon;
-            this.ribbonButton8.MinimumSize = new System.Drawing.Size(100, 0);
-            this.ribbonButton8.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.SmallImage")));
-            this.ribbonButton8.Text = "Doanh thu";
-            this.ribbonButton8.Click += new System.EventHandler(this.ribbonButton8_Click);
+            this._rbbDoanhThu.Image = global::GUI.Resource.SEO_icon;
+            this._rbbDoanhThu.MinimumSize = new System.Drawing.Size(100, 0);
+            this._rbbDoanhThu.SmallImage = ((System.Drawing.Image)(resources.GetObject("_rbbDoanhThu.SmallImage")));
+            this._rbbDoanhThu.Text = "Doanh thu";
+            this._rbbDoanhThu.Click += new System.EventHandler(this.ribbonButton8_Click);
             // 
             // ribbonPanel2
             // 
@@ -383,24 +383,24 @@
         private System.Windows.Forms.RibbonOrbMenuItem _rbiThoat;
         private System.Windows.Forms.RibbonSeparator ribbonSeparator1;
         private System.Windows.Forms.RibbonTab _rbtQuantrihethong;
-        private System.Windows.Forms.RibbonPanel rbpDanhsachtaikhoan;
-        private System.Windows.Forms.RibbonButton rbbUsergroup;
-        private System.Windows.Forms.RibbonTab rbtQuanlythungan;
-        private System.Windows.Forms.RibbonPanel rbpQuanlyHoadon;
-        private System.Windows.Forms.RibbonButton rbbLaphoadon;
+        private System.Windows.Forms.RibbonPanel _rbpQuanlytaiKhoan;
+        private System.Windows.Forms.RibbonButton _rbbNhomNguoiDung;
+        private System.Windows.Forms.RibbonTab _rbtQuanlythungan;
+        private System.Windows.Forms.RibbonPanel _rbpQuanlyHoadon;
+        private System.Windows.Forms.RibbonButton _rbbLaphoadon;
         private System.Windows.Forms.RibbonOrbMenuItem ribbonOrbMenuItem1;
         private System.Windows.Forms.RibbonOrbMenuItem ribbonOrbMenuItem2;
         private System.Windows.Forms.RibbonOrbMenuItem ribbonOrbMenuItem3;
-        private System.Windows.Forms.RibbonButton rbbNguoidung;
+        private System.Windows.Forms.RibbonButton _rbbNguoiDung;
         private System.Windows.Forms.RibbonOrbMenuItem ribbonOrbMenuItem4;
-        private System.Windows.Forms.RibbonTab ribbonTab1;
-        private System.Windows.Forms.RibbonPanel ribbonPanel3;
-        private System.Windows.Forms.RibbonButton ribbonButton4;
-        private System.Windows.Forms.RibbonButton ribbonButton6;
-        private System.Windows.Forms.RibbonPanel ribbonPanel4;
-        private System.Windows.Forms.RibbonButton ribbonButton7;
-        private System.Windows.Forms.RibbonPanel ribbonPanel5;
-        private System.Windows.Forms.RibbonButton ribbonButton8;
+        private System.Windows.Forms.RibbonTab _rbtThongKeBaoCao;
+        private System.Windows.Forms.RibbonPanel _rbpDanhSachBienLai;
+        private System.Windows.Forms.RibbonButton _rbbBaoCaoNhapLieu;
+        private System.Windows.Forms.RibbonButton _rbbBaoCaoThuTien;
+        private System.Windows.Forms.RibbonPanel _rbpDanhSachThuTien;
+        private System.Windows.Forms.RibbonButton _rbbBaoCaoBenhNhan;
+        private System.Windows.Forms.RibbonPanel _rbpThongKe;
+        private System.Windows.Forms.RibbonButton _rbbDoanhThu;
         private System.Windows.Forms.RibbonPanel ribbonPanel2;
         private System.Windows.Forms.RibbonButton ribbonButton3;
         private System.Windows.Forms.RibbonPanel rbpBaocao;
@@ -410,14 +410,14 @@
         private System.Windows.Forms.RibbonButton rbtQuanlythongke;
         private System.Windows.Forms.RibbonPanel rbpThongke;
         private DevComponents.DotNetBar.StyleManager styleManager1;
-        private System.Windows.Forms.RibbonButton _rbbPhanquyen;
-        private System.Windows.Forms.RibbonPanel ribbonPanel7;
-        private System.Windows.Forms.RibbonButton rbbLoaiphongban;
-        private System.Windows.Forms.RibbonButton rbbPhongban;
-        private System.Windows.Forms.RibbonPanel ribbonPanel8;
+        private System.Windows.Forms.RibbonButton _rbbPhanQuyen;
+        private System.Windows.Forms.RibbonPanel _rbpQuanLyPhongBan;
+        private System.Windows.Forms.RibbonButton _rbbLoaiPhongBan;
+        private System.Windows.Forms.RibbonButton _rbbPhongban;
+        private System.Windows.Forms.RibbonPanel _rbpQuanLyDichVu;
         private System.Windows.Forms.RibbonButton _rbbNhomdichvu;
         private System.Windows.Forms.RibbonButton _rbbDichvu;
-        private System.Windows.Forms.RibbonButton rbbThutien;
+        private System.Windows.Forms.RibbonButton _rbbThutien;
         private DevComponents.DotNetBar.PanelEx pnlMain;
     }
 }
