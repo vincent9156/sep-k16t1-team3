@@ -20,9 +20,11 @@ namespace GUI
 
         private void ucPhanquyen_Load(object sender, EventArgs e)
         {
+            //LoadDSPhanQuyenTheoNhom();
+            
             //LoadDSChucNang();
             LoadDSNhomNguoiDung();
-            LoadDSPhanQuyenTheoNhom();
+            
         }
         private void LoadDSChucNang()
         {
@@ -34,46 +36,34 @@ namespace GUI
             _cboNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.LayNhomNguoiDung();
             _cboNhomNguoiDung.ValueMember = "_MaNhom";
             _cboNhomNguoiDung.DisplayMember = "_TenNhom";
-            _cboNhomNguoiDung.Text = "";
-
         }
 
         private void _btnThietLap_Click(object sender, EventArgs e)
         {
-
             try
             {
-                int n = _grdChucNang.RowCount;
                 foreach (DataGridViewRow r in _grdChucNang.Rows)
                 {
                     string machucnang = r.Cells[1].Value.ToString();
-                    //   MessageBox.Show(machucnang);
                     int cn;
                     Int32.TryParse(machucnang, out cn);
                     string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
-                    //MessageBox.Show(manhom);
                     bool trangthai = false;
-                    DataGridViewCheckBoxCell chk = r.Cells[0] as DataGridViewCheckBoxCell;
+                    DataGridViewCheckBoxCell chk = r.Cells[3] as DataGridViewCheckBoxCell;
                     if (Convert.ToBoolean(chk.Value) == true)
                     {
                         trangthai = true;
-                        //MessageBox.Show("" + trangthai);
                     }
-                    if (Convert.ToBoolean(chk.Value) == false)
+                    else
                     {
-
                         trangthai = false;
-                        // MessageBox.Show(""+trangthai);
-
-                    }
-                    BL.ChucNangNhom_BL.ThemQuyenChoNhom(cn, manhom, trangthai);
-
+                    }                                 
+                    BL.ChucNangNhom_BL.CapNhatQuyenChoNhom(cn, manhom, trangthai);
                 }
-                MessageBox.Show("Đã thêm thành công!");
+                MessageBox.Show("Đã cập nhật thành công!");
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Đã có lỗi xảy ra", "Thông báo lỗi");
             }
           
@@ -104,18 +94,64 @@ namespace GUI
         private void _cboNhomNguoiDung_SelectedIndexChanged(object sender, EventArgs e)
         {
             string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
-            if (KiemTraDaPhanQuyen(manhom) == true)
+            if (KiemTraDaPhanQuyen(manhom) == false)
             {
+                NhomNguoiDungMoi(manhom);
                 _grdChucNang.DataSource = DA.ChucNangNhom_DA.LayChucNangNhom(manhom);
+             
             }
             else
             {
-                _grdChucNang.DataSource = BL.ChucNang_BL.LayChucNang();
+                _grdChucNang.DataSource = DA.ChucNangNhom_DA.LayChucNangNhom(manhom);
+                
             }
         }
-        private void LoadDSPhanQuyenTheoNhom()
+        //private void LoadDSPhanQuyenTheoNhom()
+        //{
+        //    _cboNhomNguoiDung.SelectedIndex = 0;
+        //    string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
+        //    MessageBox.Show(manhom);
+        //    if (manhom == "")
+        //    {
+
+        //    }
+        //    else
+        //    {
+        //        _grdChucNang.DataSource = BL.ChucNangNhom_BL.LayChucNangNhom(manhom);
+        //    }
+        //}
+        // Nếu là nhóm mới hệ thống tự động lưu các trường dữ liệu xuống db vs dữ liệu trangthai = false
+        private void NhomNguoiDungMoi(string manhommoi)
         {
-            _grdChucNang.DataSource = BL.ChucNangNhom_BL.LayChucNangNhom(_cboNhomNguoiDung.SelectedValue.ToString());
+            if (KiemTraDaPhanQuyen(manhommoi) == false)
+            {
+                try
+                {
+                    foreach (DataGridViewRow r in _grdChucNang.Rows)
+                    {
+                        string machucnang = r.Cells[1].Value.ToString();
+                        int cn;
+                        Int32.TryParse(machucnang, out cn);
+                        string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
+                        bool trangthai = false;
+                        //DataGridViewCheckBoxCell chk = r.Cells[0] as DataGridViewCheckBoxCell;
+                        //if (Convert.ToBoolean(chk.Value) == true)
+                        //{
+                        //    trangthai = true;
+                        //}
+                        //if (Convert.ToBoolean(chk.Value) == false)
+                        //{
+                        //    trangthai = false;
+                        //}
+                        BL.ChucNangNhom_BL.ThemQuyenChoNhom(cn, manhom, trangthai);
+                    }
+                    //MessageBox.Show("Đã thêm thành công!");
+                }
+                catch (Exception)
+                {
+                    //MessageBox.Show("Đã có lỗi xảy ra", "Thông báo lỗi");
+                }
+            }        
         }
     }
 }

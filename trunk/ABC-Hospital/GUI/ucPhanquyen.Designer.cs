@@ -41,8 +41,9 @@
             this.pnlControl = new DevComponents.DotNetBar.PanelEx();
             this._grdChucNang = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._gTenChucnang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.MaNhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlNhomnguoidung.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.pnlControl.SuspendLayout();
@@ -101,7 +102,7 @@
             this.lblNhomnguoidung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNhomnguoidung.Location = new System.Drawing.Point(7, 52);
             this.lblNhomnguoidung.Name = "lblNhomnguoidung";
-            this.lblNhomnguoidung.Size = new System.Drawing.Size(145, 23);
+            this.lblNhomnguoidung.Size = new System.Drawing.Size(134, 23);
             this.lblNhomnguoidung.TabIndex = 1;
             this.lblNhomnguoidung.Text = "Nhóm người dùng";
             // 
@@ -182,8 +183,9 @@
             this._grdChucNang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this._grdChucNang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column3,
-            this.Column4});
+            this._gTenChucnang,
+            this.Column4,
+            this.MaNhom});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -218,11 +220,11 @@
             this.Column1.Name = "Column1";
             this.Column1.Width = 60;
             // 
-            // Column3
+            // _gTenChucnang
             // 
-            this.Column3.DataPropertyName = "_TenChucNang";
-            this.Column3.HeaderText = "Tên phân hệ";
-            this.Column3.Name = "Column3";
+            this._gTenChucnang.DataPropertyName = "_TenChucNang";
+            this._gTenChucnang.HeaderText = "Tên phân hệ";
+            this._gTenChucnang.Name = "_gTenChucnang";
             // 
             // Column4
             // 
@@ -235,6 +237,13 @@
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column4.ToolTipText = "Chọn quyền cho nhóm";
             this.Column4.Width = 120;
+            // 
+            // MaNhom
+            // 
+            this.MaNhom.DataPropertyName = "_MaNhom";
+            this.MaNhom.HeaderText = "MaNhom";
+            this.MaNhom.Name = "MaNhom";
+            this.MaNhom.Visible = false;
             // 
             // ucPhanquyen
             // 
@@ -267,7 +276,8 @@
         private DevComponents.DotNetBar.LabelX lblphanquyen;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn _gTenChucnang;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNhom;
     }
 }
