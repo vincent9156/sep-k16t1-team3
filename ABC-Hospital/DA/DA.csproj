@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="ChucNangNhom_DA.cs" />
     <Compile Include="ChucNang_DA.cs" />
+    <Compile Include="DangNhap_DA.cs" />
+    <Compile Include="DichVu_DA.cs" />
     <Compile Include="LoaiPhongBan_DA.cs" />
     <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -53,6 +55,7 @@
     </Compile>
     <Compile Include="NguoiDung_DA.cs" />
     <Compile Include="NhomNguoiDung_DA.cs" />
+    <Compile Include="PhongBan_DA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
