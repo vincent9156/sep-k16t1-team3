@@ -24,6 +24,9 @@ namespace GUI
             _txtmanhomdichvu.Enabled = false;
             _btnLuu.Enabled = false;
             _btnHuy.Enabled = false;
+            _txtTennhom.Enabled = false;
+            _tbxMota.Enabled = false;
+            _chkTrangthai.Enabled = false;
         }
         private void LoadDanhSachNhomDichVu()
         {
@@ -39,6 +42,7 @@ namespace GUI
             _btnThem.Enabled = false;
             _btnLuu.Enabled = true;
             _btnHuy.Enabled = true;
+            
             // trạng thái dữ liệu
             // trạng thái dữ liệu
            // _txtmanhomdichvu.Enabled = true;
@@ -120,6 +124,30 @@ namespace GUI
             catch (Exception e)
             { }
 
+        }
+        // Sự kiện thay đổi text box ( tìm kiếm theo mã )
+        private void _TimTheoMa_TextChanged(object sender, EventArgs e)
+        {
+            if (_txtTimmaso.Text == "")
+            {
+                _grdNhomDichVu.DataSource = BL.NhomDichVu_BL.LayDanhSachNhomDichVu();
+            }
+            else
+            {
+                _grdNhomDichVu.DataSource = BL.NhomDichVu_BL.TimKiemTheoMa(_txtTimmaso.Text);
+            }
+        }
+        // Sự kiện thay đổi text box ( tìm kiếm theo tên )
+        private void _TimTheoTen_TextChanged_1(object sender, EventArgs e)
+        {
+            if (_txtTimkiem.Text == "")
+            {
+                _grdNhomDichVu.DataSource = BL.NhomDichVu_BL.LayDanhSachNhomDichVu();
+            }
+            else
+            {
+                _grdNhomDichVu.DataSource = BL.NhomDichVu_BL.TimKiemTheoTen(_txtTimkiem.Text);
+            }
         }
         // Hàm bắt sự kiện click chuột vào các row trên datagirdview
         private void _grdNhomDichVu_SelectionChanged(object sender, EventArgs e)
