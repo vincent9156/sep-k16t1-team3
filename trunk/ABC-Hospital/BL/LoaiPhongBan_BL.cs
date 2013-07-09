@@ -8,7 +8,7 @@ namespace BL
 {
     public class LoaiPhongBan_BL
     {
-          // Hàm lấy danh sách người dùng
+          // Hàm lấy danh sách loai phong ban
         public static List<LoaiPhongBan_DO> LayLoaiPhongBan()
         {
             return DA.LoaiPhongBan_DA.LayLoaiPhongBan();
@@ -19,7 +19,7 @@ namespace BL
             DA.LoaiPhongBan_DA.ThemLoaiPhongBan(maso, tenloai, mota, trangthai);
         }
         // Hàm cập nhật loại phòng ban
-        public static void CapNhaLoaiPhongBan(string maso, string tenloai, string mota, bool trangthai)
+        public static void CapNhatLoaiPhongBan(string maso, string tenloai, string mota, bool trangthai)
         {
             DA.LoaiPhongBan_DA.CapNhatLoaiPhongBan(maso, tenloai, mota, trangthai);
         }
