@@ -60,6 +60,47 @@ namespace DA
             }
         }
         // Tìm kiếm nhom dich vu theo mã
+        public static List<NhomDichVu_DO> TimKiemTheoMa(string maso)
+        {
+            List<NhomDichVu_DO> dsNhom = new List<NhomDichVu_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NhomDichVus
+                            where u.MaNhomDichVu.ToLower().Contains(maso.ToLower())
+                            select u;
+                foreach (var row in query)
+                {
+                    NhomDichVu_DO us = new NhomDichVu_DO();
+                    us._MaNhomDichVu = row.MaNhomDichVu;
+                    us._TenNhomDichVu = row.TenNhomDichVu;
+                    us._MoTa = row.MoTa;
+                    us._TrangThai = row.TrangThai;
+                    dsNhom.Add(us);
+                }
+                return dsNhom;
+            }
+        }
+
         // Tìm kiếm nhom dich vu theo tên
+        public static List<NhomDichVu_DO> TimKiemTheoTen(string ten)
+        {
+            List<NhomDichVu_DO> dsNhom = new List<NhomDichVu_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NhomDichVus
+                            where u.TenNhomDichVu.ToLower().Contains(ten.ToLower())
+                            select u;
+                foreach (var row in query)
+                {
+                    NhomDichVu_DO us = new NhomDichVu_DO();
+                    us._MaNhomDichVu = row.MaNhomDichVu;
+                    us._TenNhomDichVu = row.TenNhomDichVu;
+                    us._MoTa = row.MoTa;
+                    us._TrangThai = row.TrangThai;
+                    dsNhom.Add(us);
+                }
+            }
+            return dsNhom;
+        }
     }
 }
