@@ -8,7 +8,7 @@ namespace DA
     public class LoaiPhongBan_DA
     {
         /// <summary>
-        /// Hàm lấy danh sách phòng ban từ db lên
+        /// Hàm lấy danh sách loại phòng ban từ db lên
         /// </summary>
         /// <returns></returns>
         public static List<LoaiPhongBan_DO> LayLoaiPhongBan()
@@ -30,7 +30,7 @@ namespace DA
             return dsLoaiPhongBan;
         }
         /// <summary>
-        /// Hàm lấy danh sách loại phòng ban từ db lên
+        /// Hàm thêm loại phòng ban
         /// </summary>
         /// <returns></returns>
         public static void ThemLoaiPhongBan(string manhom, string tenloai, string mota, bool trangthai)
@@ -48,7 +48,7 @@ namespace DA
             }
         }
         /// <summary>
-        /// Cập nhật nhóm loại phòng ban
+        /// Cập nhật loại phòng ban
         /// </summary>
         /// <param name="manhom"></param>
         /// <param name="tenloai"></param>
@@ -118,6 +118,30 @@ namespace DA
                 }
             }
             return dsNhom;
+        }
+        /// <summary>
+        /// Tìm kiếm theo mã lấy tên loại phòng ban
+        /// </summary>
+        /// <param name="maso"></param>
+        /// <returns></returns>
+        public static string TimKiemTheoMaLayTen(string maso)
+        {
+            string tenLoai;
+            using (Entities sh = new Entities())
+            {
+                
+                var query = from u in sh.LoaiPhongBans
+                            where u.MaLoaiPhongBan.ToLower().Contains(maso.ToLower())
+                            select u;
+                LoaiPhongBan_DO us = new LoaiPhongBan_DO();
+                foreach (var row in query)
+                {
+                    
+                    us._TenLoaiPhongBan = row.TenLoaiPhongBan;
+                }
+                tenLoai = us._TenLoaiPhongBan.ToString();
+                return tenLoai;
+            }
         }
     }
 }
