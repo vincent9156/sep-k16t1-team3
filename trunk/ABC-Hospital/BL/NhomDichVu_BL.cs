@@ -24,6 +24,16 @@ namespace BL
         {
             DA.NhomDichVu_DA.CapNhatNhomDichVu(MaNhom, TenNhom, Mota, TrangThai);
         }
+          // Hàm tìm kiếm nhóm người dùng theo mã
+        public static List<NhomDichVu_DO> TimKiemTheoMa(string maso)
+        {
+            return DA.NhomDichVu_DA.TimKiemTheoMa(maso);
+        }
+        // Hàm tìm kiếm tên theo nhóm người dùng
+        public static List<NhomDichVu_DO> TimKiemTheoTen(string ten)
+        {
+            return DA.NhomDichVu_DA.TimKiemTheoTen(ten);
+        }
     }
         
 }
