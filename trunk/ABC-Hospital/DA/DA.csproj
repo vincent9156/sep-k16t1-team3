@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhongBan_DA.cs" />
     <Compile Include="ChucNangNhom_DA.cs" />
     <Compile Include="ChucNang_DA.cs" />
     <Compile Include="DangNhap_DA.cs" />
+    <Compile Include="DanhSachBan_DA.cs" />
     <Compile Include="DichVu_DA.cs" />
     <Compile Include="LoaiPhongBan_DA.cs" />
     <Compile Include="Model1.Designer.cs">
@@ -54,6 +56,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="NguoiDung_DA.cs" />
+    <Compile Include="NhomDichVu_DA.cs" />
     <Compile Include="NhomNguoiDung_DA.cs" />
     <Compile Include="PhongBan_DA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

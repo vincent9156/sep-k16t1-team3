@@ -26,5 +26,22 @@ namespace DA
             }
             return dsChucnang;
         }
+        public static string TimKiemTheoMaLayTen(int maso)
+        {
+            string tencn;
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.ChucNangs
+                            where u.MaChucNang.Equals(maso)
+                            select u;
+                ChucNang_DO us = new ChucNang_DO();
+                foreach (var row in query)
+                {
+                    us._TenChucNang = row.TenChucNang;
+                }
+                tencn = us._TenChucNang.ToString();
+                return tencn;
+            }
+        }
     }
 }

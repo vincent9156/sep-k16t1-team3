@@ -20,7 +20,7 @@ namespace DA
                 {
                     NguoiDung_DO us = new NguoiDung_DO();
                     us._MaNguoiDung = row.MaNguoiDung;
-                    us._MaNhom = row.MaNhom;
+                    us._MaNhom = DA.NhomNguoiDung_DA.TimKiemTheoMaLayTen(row.MaNhom);
                     us._TenNguoiDung = row.TenNguoiDung;
                     us._MatKhau = row.MatKhau;
                     us._TrangThai = row.TrangThai;

@@ -41,6 +41,7 @@ namespace DA
                 {
                     ChucNangNhom_DO us = new ChucNangNhom_DO();
                     us._MaChucNang = row.MaChucNang;
+                    us._TenChucNang = DA.ChucNang_DA.TimKiemTheoMaLayTen(row.MaChucNang);
                     us._MaNhom = row.MaNhom;
                     us._TrangThai = row.TrangThai;
                     dsChucnangnhom.Add(us);

@@ -123,7 +123,22 @@ namespace DA
             }
             return dsNhom;
         }
-
-
+        public static string TimKiemTheoMaLayTen(string maso)
+        {
+            string tenNhom;
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.NhomNguoiDungs
+                            where u.MaNhom.ToLower().Contains(maso.ToLower())
+                            select u;
+                NhomNguoiDung_DO us = new NhomNguoiDung_DO();
+                foreach (var row in query)
+                {
+                    us._TenNhom = row.TenNhom;
+                }
+                tenNhom = us._TenNhom.ToString();
+                return tenNhom;
+            }
+        }
     }
 }

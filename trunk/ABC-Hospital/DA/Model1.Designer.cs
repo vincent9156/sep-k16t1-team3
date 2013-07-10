@@ -18,11 +18,11 @@ using System.Runtime.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
 
-[assembly: EdmRelationshipAttribute("Model", "FK_ChiTietPhongBan_Ban", "Ban", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.Ban), "ChiTietPhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietPhongBan), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_Ban_ChiTietPhongBan", "ChiTietPhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.ChiTietPhongBan), "Ban", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.Ban), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_HoaDon_BenhNhan", "BenhNhan", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.BenhNhan), "HoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.HoaDon), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_ChiTietHoaDon_DichVu", "DichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.DichVu), "ChiTietHoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietHoaDon), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_ChiTietHoaDon_HoaDon", "HoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.HoaDon), "ChiTietHoaDon", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietHoaDon), true)]
-[assembly: EdmRelationshipAttribute("Model", "FK_ChiTietPhongBan_PhongBan", "PhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.PhongBan), "ChiTietPhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietPhongBan), true)]
+[assembly: EdmRelationshipAttribute("Model", "FK_ChiTietPhongBan_PhongBan", "PhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DA.PhongBan), "ChiTietPhongBan", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChiTietPhongBan), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_ChucNang", "ChucNang", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.ChucNang), "ChucNangNhom", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNhom), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_PhanQuyen_NhomNguoiDung1", "NhomNguoiDung", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DA.NhomNguoiDung), "ChucNangNhom", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.ChucNangNhom), true)]
 [assembly: EdmRelationshipAttribute("Model", "FK_DichVu_NhomDichVu", "NhomDichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DA.NhomDichVu), "DichVu", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DA.DichVu), true)]
@@ -444,12 +444,12 @@ namespace DA
         /// Create a new Ban object.
         /// </summary>
         /// <param name="maBan">Initial value of the MaBan property.</param>
-        /// <param name="maPhongBan">Initial value of the MaPhongBan property.</param>
-        public static Ban CreateBan(global::System.String maBan, global::System.String maPhongBan)
+        /// <param name="maCTPB">Initial value of the MaCTPB property.</param>
+        public static Ban CreateBan(global::System.String maBan, global::System.String maCTPB)
         {
             Ban ban = new Ban();
             ban.MaBan = maBan;
-            ban.MaPhongBan = maPhongBan;
+            ban.MaCTPB = maCTPB;
             return ban;
         }
 
@@ -488,24 +488,24 @@ namespace DA
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String MaPhongBan
+        public global::System.String MaCTPB
         {
             get
             {
-                return _MaPhongBan;
+                return _MaCTPB;
             }
             set
             {
-                OnMaPhongBanChanging(value);
-                ReportPropertyChanging("MaPhongBan");
-                _MaPhongBan = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MaPhongBan");
-                OnMaPhongBanChanged();
+                OnMaCTPBChanging(value);
+                ReportPropertyChanging("MaCTPB");
+                _MaCTPB = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MaCTPB");
+                OnMaCTPBChanged();
             }
         }
-        private global::System.String _MaPhongBan;
-        partial void OnMaPhongBanChanging(global::System.String value);
-        partial void OnMaPhongBanChanged();
+        private global::System.String _MaCTPB;
+        partial void OnMaCTPBChanging(global::System.String value);
+        partial void OnMaCTPBChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -565,18 +565,34 @@ namespace DA
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_ChiTietPhongBan_Ban", "ChiTietPhongBan")]
-        public EntityCollection<ChiTietPhongBan> ChiTietPhongBans
+        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_Ban_ChiTietPhongBan", "ChiTietPhongBan")]
+        public ChiTietPhongBan ChiTietPhongBan
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ChiTietPhongBan>("Model.FK_ChiTietPhongBan_Ban", "ChiTietPhongBan");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ChiTietPhongBan>("Model.FK_Ban_ChiTietPhongBan", "ChiTietPhongBan").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ChiTietPhongBan>("Model.FK_Ban_ChiTietPhongBan", "ChiTietPhongBan").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<ChiTietPhongBan> ChiTietPhongBanReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ChiTietPhongBan>("Model.FK_Ban_ChiTietPhongBan", "ChiTietPhongBan");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ChiTietPhongBan>("Model.FK_ChiTietPhongBan_Ban", "ChiTietPhongBan", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<ChiTietPhongBan>("Model.FK_Ban_ChiTietPhongBan", "ChiTietPhongBan", value);
                 }
             }
         }
@@ -984,14 +1000,10 @@ namespace DA
         /// Create a new ChiTietPhongBan object.
         /// </summary>
         /// <param name="maCTPB">Initial value of the MaCTPB property.</param>
-        /// <param name="maPhongBan">Initial value of the MaPhongBan property.</param>
-        /// <param name="maBan">Initial value of the MaBan property.</param>
-        public static ChiTietPhongBan CreateChiTietPhongBan(global::System.String maCTPB, global::System.String maPhongBan, global::System.String maBan)
+        public static ChiTietPhongBan CreateChiTietPhongBan(global::System.String maCTPB)
         {
             ChiTietPhongBan chiTietPhongBan = new ChiTietPhongBan();
             chiTietPhongBan.MaCTPB = maCTPB;
-            chiTietPhongBan.MaPhongBan = maPhongBan;
-            chiTietPhongBan.MaBan = maBan;
             return chiTietPhongBan;
         }
 
@@ -1028,7 +1040,31 @@ namespace DA
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String PhongSo
+        {
+            get
+            {
+                return _PhongSo;
+            }
+            set
+            {
+                OnPhongSoChanging(value);
+                ReportPropertyChanging("PhongSo");
+                _PhongSo = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("PhongSo");
+                OnPhongSoChanged();
+            }
+        }
+        private global::System.String _PhongSo;
+        partial void OnPhongSoChanging(global::System.String value);
+        partial void OnPhongSoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String MaPhongBan
         {
@@ -1040,7 +1076,7 @@ namespace DA
             {
                 OnMaPhongBanChanging(value);
                 ReportPropertyChanging("MaPhongBan");
-                _MaPhongBan = StructuralObject.SetValidValue(value, false);
+                _MaPhongBan = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("MaPhongBan");
                 OnMaPhongBanChanged();
             }
@@ -1052,26 +1088,50 @@ namespace DA
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String MaBan
+        public global::System.String MoTa
         {
             get
             {
-                return _MaBan;
+                return _MoTa;
             }
             set
             {
-                OnMaBanChanging(value);
-                ReportPropertyChanging("MaBan");
-                _MaBan = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MaBan");
-                OnMaBanChanged();
+                OnMoTaChanging(value);
+                ReportPropertyChanging("MoTa");
+                _MoTa = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MoTa");
+                OnMoTaChanged();
             }
         }
-        private global::System.String _MaBan;
-        partial void OnMaBanChanging(global::System.String value);
-        partial void OnMaBanChanged();
+        private global::System.String _MoTa;
+        partial void OnMoTaChanging(global::System.String value);
+        partial void OnMoTaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> TrangThai
+        {
+            get
+            {
+                return _TrangThai;
+            }
+            set
+            {
+                OnTrangThaiChanging(value);
+                ReportPropertyChanging("TrangThai");
+                _TrangThai = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TrangThai");
+                OnTrangThaiChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _TrangThai;
+        partial void OnTrangThaiChanging(Nullable<global::System.Boolean> value);
+        partial void OnTrangThaiChanged();
 
         #endregion
     
@@ -1083,34 +1143,18 @@ namespace DA
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_ChiTietPhongBan_Ban", "Ban")]
-        public Ban Ban
+        [EdmRelationshipNavigationPropertyAttribute("Model", "FK_Ban_ChiTietPhongBan", "Ban")]
+        public EntityCollection<Ban> Bans
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Ban>("Model.FK_ChiTietPhongBan_Ban", "Ban").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Ban>("Model.FK_ChiTietPhongBan_Ban", "Ban").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<Ban> BanReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Ban>("Model.FK_ChiTietPhongBan_Ban", "Ban");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Ban>("Model.FK_Ban_ChiTietPhongBan", "Ban");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Ban>("Model.FK_ChiTietPhongBan_Ban", "Ban", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Ban>("Model.FK_Ban_ChiTietPhongBan", "Ban", value);
                 }
             }
         }
@@ -1551,7 +1595,7 @@ namespace DA
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.Int32> DonGia
+        public global::System.String DonGia
         {
             get
             {
@@ -1561,13 +1605,13 @@ namespace DA
             {
                 OnDonGiaChanging(value);
                 ReportPropertyChanging("DonGia");
-                _DonGia = StructuralObject.SetValidValue(value);
+                _DonGia = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("DonGia");
                 OnDonGiaChanged();
             }
         }
-        private Nullable<global::System.Int32> _DonGia;
-        partial void OnDonGiaChanging(Nullable<global::System.Int32> value);
+        private global::System.String _DonGia;
+        partial void OnDonGiaChanging(global::System.String value);
         partial void OnDonGiaChanged();
     
         /// <summary>
@@ -2963,6 +3007,30 @@ namespace DA
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TenPhongBan
+        {
+            get
+            {
+                return _TenPhongBan;
+            }
+            set
+            {
+                OnTenPhongBanChanging(value);
+                ReportPropertyChanging("TenPhongBan");
+                _TenPhongBan = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TenPhongBan");
+                OnTenPhongBanChanged();
+            }
+        }
+        private global::System.String _TenPhongBan;
+        partial void OnTenPhongBanChanging(global::System.String value);
+        partial void OnTenPhongBanChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.String MaLoaiPhongBan
@@ -3013,24 +3081,24 @@ namespace DA
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String TenPhongBan
+        public Nullable<global::System.Int32> SoLuongPhong
         {
             get
             {
-                return _TenPhongBan;
+                return _SoLuongPhong;
             }
             set
             {
-                OnTenPhongBanChanging(value);
-                ReportPropertyChanging("TenPhongBan");
-                _TenPhongBan = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("TenPhongBan");
-                OnTenPhongBanChanged();
+                OnSoLuongPhongChanging(value);
+                ReportPropertyChanging("SoLuongPhong");
+                _SoLuongPhong = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SoLuongPhong");
+                OnSoLuongPhongChanged();
             }
         }
-        private global::System.String _TenPhongBan;
-        partial void OnTenPhongBanChanging(global::System.String value);
-        partial void OnTenPhongBanChanged();
+        private Nullable<global::System.Int32> _SoLuongPhong;
+        partial void OnSoLuongPhongChanging(Nullable<global::System.Int32> value);
+        partial void OnSoLuongPhongChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
