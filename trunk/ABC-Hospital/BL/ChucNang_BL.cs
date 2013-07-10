@@ -14,5 +14,10 @@ namespace BL
             return DA.ChucNang_DA.LayChucNang();
         }
 
+        public static string TimKiemTheoMaLayTen(int maso)
+        {
+            return DA.ChucNang_DA.TimKiemTheoMaLayTen(maso);
+        }
+
     }
 }
