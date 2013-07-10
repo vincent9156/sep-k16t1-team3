@@ -59,7 +59,7 @@ namespace GUI
         // Hàm kiểm tra hợp lệ khi người dùng nhập vào
         private bool KiemtraHopLe()
         {
-            if (_txtMaNguoiDung.Text == "" || _cboNhomNguoiDung.Text == "" || _txtTenNguoiDung.Text == "" || _txtMatKhau.Text == "")
+            if (_txtMaNguoiDung.Text == "" || _cboNhomNguoiDung.Text == "" || _txtTenNguoiDung.Text == "" || _txtMatKhau.Text == "" || BL.DangNhap_BL.KiemTraHopLe(_txtMaNguoiDung.Text, _txtMatKhau.Text) == false)
             {
                 return false;
             }
@@ -168,7 +168,7 @@ namespace GUI
                 {
                     try
                     {
-                        BL.NguoiDung_BL.ThemNguoiDung(_txtMaNguoiDung.Text, _cboNhomNguoiDung.SelectedValue.ToString(), _txtTenNguoiDung.Text, _txtMatKhau.Text, _chkTrangThai.Checked);
+                        BL.NguoiDung_BL.ThemNguoiDung(_txtMaNguoiDung.Text, _cboNhomNguoiDung.SelectedValue.ToString(),_txtTenNguoiDung.Text, BL.HamDungChung_BL.md5(_txtMatKhau.Text), _chkTrangThai.Checked);
                         MessageBox.Show("Đã thêm  người dùng " + _txtTenNguoiDung.Text + " thành công!");
                         LoadDSNguoiDung();
                         LoadDSNguoiDungTheoNhom();
@@ -278,9 +278,10 @@ namespace GUI
                 _txtMaNguoiDung.Text = _grdNguoiDung.Rows[pos].Cells[0].Value.ToString().Trim();
                 _txtTenNguoiDung.Text = _grdNguoiDung.Rows[pos].Cells[2].Value.ToString(); 
                 _txtMatKhau.Text = _grdNguoiDung.Rows[pos].Cells[3].Value.ToString();
-                _cboNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.LayNhomNguoiDung();
-                _cboNhomNguoiDung.SelectedValue = _grdNguoiDung.Rows[pos].Cells[1].Value.ToString();
-                _cboNhomNguoiDung.DisplayMember = "_TenNhom";
+                //_cboNhomNguoiDung.DataSource = BL.NhomNguoiDung_BL.LayNhomNguoiDung();
+                //_cboNhomNguoiDung.SelectedValue = _grdNguoiDung.Rows[pos].Cells[1].Value.ToString();
+                //_cboNhomNguoiDung.DisplayMember = "_TenNhom";
+                _cboNhomNguoiDung.Text = _grdNguoiDung.Rows[pos].Cells[1].Value.ToString();
             
                 if (_grdNguoiDung.Rows[pos].Cells[4].Value.ToString() == "True")
                 {

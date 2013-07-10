@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlNhomnguoidung = new DevComponents.DotNetBar.PanelEx();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblphanquyen = new DevComponents.DotNetBar.LabelX();
             this.lblNhomnguoidung = new DevComponents.DotNetBar.LabelX();
             this._cboNhomNguoiDung = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -54,7 +53,6 @@
             // 
             this.pnlNhomnguoidung.CanvasColor = System.Drawing.SystemColors.Control;
             this.pnlNhomnguoidung.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.pnlNhomnguoidung.Controls.Add(this.textBox1);
             this.pnlNhomnguoidung.Controls.Add(this.lblphanquyen);
             this.pnlNhomnguoidung.Controls.Add(this.lblNhomnguoidung);
             this.pnlNhomnguoidung.Controls.Add(this._cboNhomNguoiDung);
@@ -70,13 +68,6 @@
             this.pnlNhomnguoidung.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.pnlNhomnguoidung.Style.GradientAngle = 90;
             this.pnlNhomnguoidung.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(485, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 20);
-            this.textBox1.TabIndex = 4;
             // 
             // lblphanquyen
             // 
@@ -256,7 +247,6 @@
             this.Size = new System.Drawing.Size(838, 507);
             this.Load += new System.EventHandler(this.ucPhanquyen_Load);
             this.pnlNhomnguoidung.ResumeLayout(false);
-            this.pnlNhomnguoidung.PerformLayout();
             this.panelEx2.ResumeLayout(false);
             this.pnlControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._grdChucNang)).EndInit();
@@ -274,7 +264,6 @@
         private DevComponents.DotNetBar.PanelEx pnlControl;
         private DevComponents.DotNetBar.Controls.DataGridViewX _grdChucNang;
         private DevComponents.DotNetBar.LabelX lblphanquyen;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn _gTenChucnang;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column4;
