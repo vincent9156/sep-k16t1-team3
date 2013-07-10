@@ -62,8 +62,14 @@
     <Compile Include="frmChonnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChonnhanvien.Designer.cs">
+    <Compile Include="frmChonnhanvien.designer.cs">
       <DependentUpon>frmChonnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDanhsachban.cs">
       <SubType>Form</SubType>
@@ -77,16 +83,10 @@
     <Compile Include="frmThemphidichvu.Designer.cs">
       <DependentUpon>frmThemphidichvu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDangNhap.Designer.cs">
-      <DependentUpon>frmDangNhap.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Main.designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -141,25 +141,25 @@
     <Compile Include="ucNguoidung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucNguoidung.Designer.cs">
+    <Compile Include="ucNguoidung.designer.cs">
       <DependentUpon>ucNguoidung.cs</DependentUpon>
     </Compile>
     <Compile Include="ucNhomdichvu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucNhomdichvu.Designer.cs">
+    <Compile Include="ucNhomdichvu.designer.cs">
       <DependentUpon>ucNhomdichvu.cs</DependentUpon>
     </Compile>
     <Compile Include="ucNhomnguoidung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucNhomnguoidung.Designer.cs">
+    <Compile Include="ucNhomnguoidung.designer.cs">
       <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
     </Compile>
     <Compile Include="ucPhanquyen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPhanquyen.Designer.cs">
+    <Compile Include="ucPhanquyen.designer.cs">
       <DependentUpon>ucPhanquyen.cs</DependentUpon>
     </Compile>
     <Compile Include="ucPhongBan.cs">
@@ -186,14 +186,14 @@
     <EmbeddedResource Include="frmChonnhanvien.resx">
       <DependentUpon>frmChonnhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDanhsachban.resx">
       <DependentUpon>frmDanhsachban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemphidichvu.resx">
       <DependentUpon>frmThemphidichvu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDangNhap.resx">
-      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -255,6 +255,7 @@
       <DependentUpon>ucXacnhanthutien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.Config" />
+    <None Include="Resources\App.Config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

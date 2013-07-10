@@ -44,12 +44,12 @@ namespace GUI
             {
                 foreach (DataGridViewRow r in _grdChucNang.Rows)
                 {
-                    string machucnang = r.Cells[1].Value.ToString();
+                    string machucnang = r.Cells[0].Value.ToString();
                     int cn;
                     Int32.TryParse(machucnang, out cn);
                     string manhom = _cboNhomNguoiDung.SelectedValue.ToString();
                     bool trangthai = false;
-                    DataGridViewCheckBoxCell chk = r.Cells[3] as DataGridViewCheckBoxCell;
+                    DataGridViewCheckBoxCell chk = r.Cells[2] as DataGridViewCheckBoxCell;
                     if (Convert.ToBoolean(chk.Value) == true)
                     {
                         trangthai = true;
