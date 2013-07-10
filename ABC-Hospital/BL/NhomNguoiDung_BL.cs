@@ -34,7 +34,11 @@ namespace BL
         {
             return DA.NhomNguoiDung_DA.TimKiemTheoTen(ten);
         }
-
+        // Tìm kiếm mã lấy tên cho grd người dùng
+        public static string TimKiemTheoMaLayTen(string maso)
+        {
+            return DA.NhomNguoiDung_DA.TimKiemTheoMaLayTen(maso);
+        }
 
     }
 }
