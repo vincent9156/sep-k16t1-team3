@@ -128,8 +128,7 @@ namespace DA
         {
             string tenLoai;
             using (Entities sh = new Entities())
-            {
-                
+            {         
                 var query = from u in sh.LoaiPhongBans
                             where u.MaLoaiPhongBan.ToLower().Contains(maso.ToLower())
                             select u;
