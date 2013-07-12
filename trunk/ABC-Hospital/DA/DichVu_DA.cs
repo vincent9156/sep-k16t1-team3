@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +31,30 @@ namespace DA
             }
             return dsDichVu;
         }
+        // Lấy dịch vụ theo nhóm dịch vụ
+        public static List<DichVu_DO> LayDichVuTheoNhom(string manhom)
+        {
+            List<DichVu_DO> dsDichvu = new List<DichVu_DO>();
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.DichVus
+                            where u.MaNhomDichVu == manhom
+                            select u;
+                foreach (var row in query)
+                {
+                    DichVu_DO us = new DichVu_DO();
+                    us._MaDichVu = row.MaDichVu;
+                    us._NhomDichVu = DA.NhomDichVu_DA.TimKiemTheoMaLayTen(row.MaNhomDichVu);
+                    us._TenDichVu = row.TenDichVu;
+                    us._MoTa = row.MoTa;
+                    us._DonGia = row.DonGia;
+                    us._TrangThai = row.TrangThai;
+                    dsDichvu.Add(us);
+                }
+            }
+            return dsDichvu;
+        }
+
         /// Cập nhật dịch vụ 
         public static void CapNhatDichVu(string madichvu, string manhomdichvu, string tendichvu, string dongia, string mota, bool trangthai)
         {
@@ -129,6 +153,24 @@ namespace DA
                 }
             }
             return dsDichVu;
+        }
+        // Tìm kiếm dịch vụ lấy đơn giá
+        public static string TimKiemDichVuLayGia(string tendv)
+        {
+            string dongia;
+            using (Entities tk = new Entities())
+            {
+                var query = from u in tk.DichVus
+                            where u.TenDichVu.ToLower().Contains(tendv.ToLower())
+                            select u;
+                DichVu_DO us = new DichVu_DO();
+                foreach (var row in query)
+                {
+                    us._DonGia = row.DonGia;
+                }
+                dongia = us._DonGia.ToString();
+                return dongia;
+            }
         }
     }
 }
