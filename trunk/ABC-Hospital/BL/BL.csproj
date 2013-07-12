@@ -42,13 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BenhNhan_BL.cs" />
+    <Compile Include="ChiTietPhongBan_BL.cs" />
     <Compile Include="ChucNangNhom_BL.cs" />
     <Compile Include="ChucNang_BL.cs" />
     <Compile Include="DangNhap_BL.cs" />
+    <Compile Include="DanhSachBan_BL.cs" />
     <Compile Include="DichVu_BL.cs" />
     <Compile Include="HamDungChung_BL.cs" />
     <Compile Include="LoaiPhongBan_BL.cs" />
     <Compile Include="NguoiDung_BL.cs" />
+    <Compile Include="NhomDichVu_BL.cs" />
     <Compile Include="NhomNguoiDung_BL.cs" />
     <Compile Include="PhongBan_BL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

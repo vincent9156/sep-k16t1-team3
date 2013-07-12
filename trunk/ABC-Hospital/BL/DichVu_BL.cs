@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +37,16 @@ namespace BL
         public static List<DichVu_DO> TimKiemTheoTen(string tenphong)
         {
             return DA.DichVu_DA.TimKiemTheoTen(tenphong);
+        }
+        // Hàm lấy danh sách dịch vụ theo nhóm dịch vụ
+        public static List<DichVu_DO> LayDichVuTheoNhom(string manhom)
+        {
+            return DA.DichVu_DA.LayDichVuTheoNhom(manhom);
+        }
+        // Tìm kiếm dịch vụ lấy đơn giá
+        public static string TimKiemDichVuLayGia(string tendv)
+        {
+            return DA.DichVu_DA.TimKiemDichVuLayGia(tendv);
         }
     }
 }
