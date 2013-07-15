@@ -29,12 +29,40 @@ namespace GUI
         {
             if (BL.DangNhap_BL.KiemTraHopLe(user, pass) == true)
             {
-                if (BL.DangNhap_BL.KiemTraDungTK(user, pass) == true)
+                
+                // Mã hóa md5
+                if (BL.DangNhap_BL.KiemTraDungTK(user, BL.HamDungChung_BL.md5(pass)) == true)
                 {
-                    //HienThiPhanQuyen(user);
-                    Main gdchinh = new Main(user);
-                    gdchinh.Visible = true;
-                    this.Visible = false;
+                    // Kiểm tra người dùng CA này có trong bảng phân công chưa nếu chưa thì tự động insert vào
+                    string usercut = _txtTenTaiKhoan.Text.Substring(0, 2);
+                    if (usercut == "CA")
+                    {
+                        if (BL.PhanCong_BL.KiemTraNguoiDungDaPhanCong(user) == false)
+                        {
+                            try
+                            {
+                                //MessageBox.Show("Here");
+                                BL.PhanCong_BL.ThemPhanCong(user, 0, "", "", true);
+                                //MessageBox.Show("Success!");
+
+                            }
+                            catch (Exception)
+                            {
+
+                            }
+                        }
+                        frmChonnhanvien chonvitri = new frmChonnhanvien(user);
+                        chonvitri.Visible = true;
+                        this.Visible = false;
+                    }
+                    else // những người dùng khác thì vào thẳng giao diện chính
+                    {
+                        //HienThiPhanQuyen(user);
+                        Main gdchinh = new Main(user);
+                        gdchinh.Visible = true;
+                        this.Visible = false;
+                    }
+                   
                 }
                 else
                 {
@@ -56,6 +84,8 @@ namespace GUI
         private void _btnDangNhap_Click(object sender, EventArgs e)
         {
             KiemTraDangNhap(_txtTenTaiKhoan.Text, _txtMatKhau.Text);
+             
+           
         }
 
         private void _btnThoat_Click(object sender, EventArgs e)
