@@ -15,7 +15,7 @@ namespace DO
         public string _GioiTinh { get; set; }
         public int? _Tuoi { get; set; }
         public int? _TongTien { get; set; }
-        public DateTime _NgayThang { get; set; }
+        public string _NgayThang { get; set; }
         public string _TrangThai { get; set; }
     }
 }
