@@ -67,12 +67,13 @@ namespace DA
         /// Hàm lấy mã ctpb lớn nhất trong database
         /// </summary>
         /// <returns></returns>
-        public static String MaBanLonNhat()
+        public static String MaBanLonNhat(string mactpb)
         {
             string maBan = "";
             using (Entities sh = new Entities())
             {
                 var query = from u in sh.Bans
+                            where u.MaCTPB.ToLower().Contains(mactpb.ToLower())
                             select u;
                 DanhSachBan_DO us = new DanhSachBan_DO();
                 foreach (var row in query)
