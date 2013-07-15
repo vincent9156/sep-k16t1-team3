@@ -15,11 +15,16 @@ namespace GUI
         {
             InitializeComponent();
             //lblDatetime.Text = BL.Hamdungchung.Updatetime();
+            LoadDSBenhNhanCho();
         }
 
         private void textBoxX6_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void LoadDSBenhNhanCho()
+        {
+            //_grdDSBenhNhanCHo.DataSource = BL.HoaDon_BL.LayDSBenhNhanCho("AD00001",DateTime.Now,false);
         }
 
     }
